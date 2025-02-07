@@ -1,0 +1,422 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    color: white;
+    font-family: 'Schoolbell', arial, serif; 
+    background-color: black;
+    animation: body 1s linear;
+
+}
+
+body{
+   
+    height: 10000px;
+  
+   
+      
+    
+}
+
+#landingArea {
+    
+    background: rgb(193,193,193);
+    background: radial-gradient(circle at 80% 40%, rgba(123,123,123,1) 0%, rgba(50,50,50,1) 26%, rgba(0,0,0,1) 42%);
+}
+
+#headerTags{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30%;
+    margin-left: 12%;
+    white-space: nowrap;
+}
+
+#topic{
+    cursor: pointer;
+    
+}
+
+#topic:hover {
+    background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header {
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    font-size: 65%;
+}
+
+#cornerLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%; 
+    margin-left: 4%;
+}
+
+#squig {
+    font-size: 40px;
+}
+
+#intro {
+    margin-left: 5%;
+    font-size: 200%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0%;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 400px;
+}
+
+video {
+    max-width: 100%; /* Ensure video doesn't exceed container width */
+    border-radius: 50%;
+    width: 400px;   /* Set the width */
+    height: 400px;  /* Set the height to the same value */
+    object-fit: cover;  /* Ensures the video fills the square, cropping excess */
+}
+
+#nameIntro {
+    padding-left: 5%;
+    background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin-top: 20%;
+    left: -27%;
+}
+
+#linkedLink {
+    background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60%;
+    font-family: 'Schoolbell', arial, serif; 
+    color: white;
+    position: relative;
+    left: 15%;
+    margin-bottom: 5%;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(238, 238, 238, 0);
+    border: 1px solid white;
+    border-image: linear-gradient(to right, rgb(55, 163, 235) 0%, #ffffff 100%) 1;
+    border-radius: 50%;
+}
+
+#skillsArea {
+    padding: 5%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    animation: smoothAppearance 1s ease-out forwards;
+    
+
+    
+}
+
+
+#description {
+    position: relative;
+    top: -70px;
+    left: 10%;
+}
+
+#skillsHeader {
+    padding-left: 5%;
+    position: relative;
+    padding-top: 8%;
+    font-size: 65px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #intro {
+        margin-left: 5%; /* Reduce margin for smaller screens */
+        font-size: 150%; /* Reduce font size for smaller screens */
+        flex-direction: column; /* Stack intro content vertically */
+    }
+
+    #nameIntro {
+        left: 0; /* Reset position for smaller screens */
+        margin-top: 10%; /* Adjust margin for smaller screens */
+    }
+
+    #linkedLink {
+        left: 0; /* Reset position for smaller screens */
+        margin-bottom: 10%; /* Adjust margin for smaller screens */
+    }
+
+    #description {
+        left: 5%; /* Adjust position for smaller screens */
+        top: 0; /* Reset position for smaller screens */
+    }
+
+    #skillsHeader {
+        font-size: 40px; /* Reduce font size for smaller screens */
+        left: 5%; /* Adjust position for smaller screens */
+    }
+
+    video {
+        width: 100%; /* Make video responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+#pLan{
+    font-size: 30px;
+    background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+
+
+
+#htFig{
+  
+   padding-left: 50%;
+}
+
+#jsDig{
+    padding-top: 10%;
+padding-left: 100%;
+    
+}
+
+
+
+
+
+#lanPics{
+   
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
+}
+#lanPics img{
+    height: 40px;
+    width: 40px;
+    
+    
+}
+
+
+#languageDiv, #frameworks, #tools{
+background: rgba(180, 180, 180, 0.322);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgb(218, 218, 218);
+backdrop-filter: blur(12.3px);
+-webkit-backdrop-filter: blur(12.3px);
+border: 2px solid rgb(255, 252, 252);
+width: 30%;
+padding-left: 2%;
+height: 20%;
+}
+
+#languageDiv:hover{
+filter: brightness(120%);
+
+}
+#frameworks:hover{
+  filter: brightness(120%);
+
+}
+#tools:hover{
+  filter: brightness(120%);
+
+}
+#arrowRight{
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 71%;
+
+}
+
+#arrowLeft{
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+}
+
+#imgJ, #scriptImg, #jsImg{
+    position: relative;
+    left: 30%;
+    padding-top: 10%;
+    filter: drop-shadow(0 0 0.99rem rgb(0, 153, 255));
+   
+}
+
+
+
+figcaption{
+    padding-bottom: 25%;
+    position: relative;
+    left: 38%;
+}
+
+
+#wrapper{ 
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
+  
+  #progress {
+    height: 8px;
+    width: 0%;
+    background-color: #fff;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    animation: progress 1s linear;
+    
+  }
+
+  #progress.hide {
+    display: none;
+  }
+  @keyframes progress {
+    to {
+      background-color: rgb(38, 194, 255);
+      width: 100%;
+    }
+  }
+  
+  .cube-wrap {
+ 
+   
+        transform: rotateX(180deg);
+    --size: 15vmin;
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    width: 0;
+    height: 0;
+    perspective: 100vmin;
+  }
+  .cube {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+    animation: cube 2s linear;
+    
+    transform-origin: center; /* Ensure transformations are applied from the center */
+      
+  }
+  @keyframes cube {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+    }
+    50% {
+      transform: rotateX(360deg) rotateY(-45deg) rotateZ(45deg) scale(1);
+    }
+    100% {
+      transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) scale(1); /* Land on bottom face */
+    }
+  }
+  
+  .side {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    filter: drop-shadow(0 0 0.99rem rgb(0, 153, 255));
+    backface-visibility: visible;
+    top: calc(var(--size) * -.5);
+    left: calc(var(--size) * -.5);
+  }
+  .top {
+    
+    background-color: rgb(255, 255, 255);
+    transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+  }
+  .bottom {
+    color: rgb(5, 142, 255);
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      text-align: center;
+    background-color: rgb(255, 255, 255);
+    transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+  }
+  .left {
+      font-size: 2rem;
+   
+    
+    background-color: #ccc;
+    transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+  }
+  .right {
+    background-color: #ddd;
+    transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+  }
+  .front {
+    background-color: #aaa;
+    transform: translateZ(calc(var(--size) * .5));
+  }
+  .back {
+    background-color: #bbb;
+    transform: translateZ(calc(var(--size) * -.5));
+  }
+  
+  :root * {
+    
+    animation-play-state: play;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+  
+@keyframes smoothAppearance {
+    0% {
+      opacity: 0; /* Fully transparent */
+      transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+  
+ 
