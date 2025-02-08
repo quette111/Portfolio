@@ -49,7 +49,14 @@ function letsConnect(){
 
 function scrollToSkills(){
     window.scroll({
-        top: 750,
+        top: 730,
+        behavior: 'smooth',
+    });
+}
+
+function scrollToEducation(){
+    window.scroll({
+        top: 1460,
         behavior: 'smooth',
     });
 }
@@ -86,7 +93,7 @@ const skillsArea = document.getElementById('skillsArea');
 
 
 window.addEventListener('scroll', function(){
-    if(window.scrollY > 245) {
+    if(window.scrollY > 100) {
         skillsArea.innerHTML = `
             <div id='languageDiv'>
 
@@ -128,9 +135,16 @@ window.addEventListener('scroll', function(){
         skillsArea.innerHTML = `
         `
     }
+
+    
     
 })
-
+ 
+const schoolsContainer = document.getElementById('schoolsContainer')
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 500) {
+        schoolsContainer.style.animation = 'smoothAppearance 1s ease-out forwards';
+}})
 
 
 let i = 0; // Declare i globally so it retains its value
@@ -248,3 +262,6 @@ function turnLeft3(){
 }  
 
 
+function openCodeTheDream(){
+    window.open('https://codethedream.org/');
+}
