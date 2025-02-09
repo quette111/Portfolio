@@ -265,3 +265,19 @@ function turnLeft3(){
 function openCodeTheDream(){
     window.open('https://codethedream.org/');
 }
+
+const selfAdjectives = ['Software Developer','Analytical thinker','Technology enthusiast','Computer programmer']
+
+const description = document.getElementById('description');
+
+function changeDescription(){
+    if(i < selfAdjectives.length - 1){
+        i++
+    }else{
+        i = 0
+    }
+    description.innerHTML = `${selfAdjectives[i]}`
+
+    setTimeout(changeDescription, 2000);
+}
+changeDescription()

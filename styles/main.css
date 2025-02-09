@@ -1,11 +1,25 @@
+/*@font-face{
+  font-family: 'MyCustomFont';
+  src: url('quetteFont.ttf');
+  
+  
+}
+*/
+
+
+
 body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     color: white;
-    font-family: 'Schoolbell', arial, serif; 
+    /*font-family: 'MyCustomFont', arial, serif; */
     background-color: black;
     animation: body 1s linear;
+    font-size: 100%;
+    font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
@@ -145,6 +159,11 @@ video {
     left: 10%;
 }
 
+#secondDescription{
+  position: relative;
+  top: -113px;
+  left: 20%;
+}
 #skillsHeader {
     padding-left: 5%;
     position: relative;
@@ -424,14 +443,17 @@ figcaption{
       transform: translateY(0); /* Move to original position */
     }
   }
-  
- 
+
+
+
 #educationGifContainer{
-  padding-left: 15%;
+  padding-left: 12%;
   padding-bottom: 0%;
-  filter: drop-shadow(0 0 0.99rem rgb(0, 153, 255));
+  height: 50%;
+  
 }
 #educationArea{
+  
   display: flex;
   flex-direction: column;
   background: rgb(193,193,193);
@@ -448,7 +470,7 @@ figcaption{
     -webkit-text-fill-color: transparent;
     text-align: center;
   position: absolute;
-  top: -200px;
+  top: -140px;
   left: 60%;
   
 }
@@ -459,7 +481,7 @@ figcaption{
     -webkit-text-fill-color: transparent;
     text-align: center;
   position: absolute;
-  top: -400px;
+  top: -350px;
   left: 60%;
  cursor: pointer;
 }
@@ -472,6 +494,24 @@ backdrop-filter: blur(12.3px);
 -webkit-backdrop-filter: blur(12.3px);
 border: 2px solid rgb(255, 252, 252);
   border: solid 0.5px white;
+
+}
+
+#codeTheDreamImg{
+position: relative;
+left: 55%;
+top: -335px;
+filter: drop-shadow(0 0 0.99rem rgb(255, 255, 255));
+
+
+
+}
+
+#mizzouImg{
+  position: relative;
+  left: 50%;
+  top: -130px;
+  filter: drop-shadow(0 0 0.99rem rgba(255, 255, 255, 0.434));
 
 }
 #schoolInfo{
