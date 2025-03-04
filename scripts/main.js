@@ -266,7 +266,7 @@ function openCodeTheDream(){
     window.open('https://codethedream.org/');
 }
 
-const selfAdjectives = ['Software Developer','Analytical thinker','Technology enthusiast','Computer programmer']
+const selfAdjectives = ['Software Developer','Analytical thinker','Tech enthusiast','Computer programmer']
 
 const description = document.getElementById('description');
 
@@ -281,3 +281,22 @@ function changeDescription(){
     setTimeout(changeDescription, 2000);
 }
 changeDescription()
+
+
+
+let numz = 0
+
+const likedPage = document.getElementById('likedPage');
+function addLike(){
+
+numz += 1
+likedPage.innerHTML = `${numz}`   
+
+
+}
+
+
+
+function blogPreview(){
+    
+}

@@ -4,56 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Marquette Hanson - Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Badeen+Display&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Fjalla+One&family=Fleur+De+Leah&family=Ga+Maamli&family=Itim&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Sedgwick+Ave&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Badeen+Display&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Fleur+De+Leah&family=Ga+Maamli&family=Itim&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Sedgwick+Ave&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Badeen+Display&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Fjalla+One&family=Fleur+De+Leah&family=Ga+Maamli&family=Itim&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Sedgwick+Ave&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Progress Indicator -->
+    <div id="progress"></div>
 
-    <div  id="progress"></div>
-
-    <div  class="cube-wrap">
-      <div  class="cube">
-        <div class="side top"></div>
-        <div onclick="letsConnect()" class="side bottom">Let's ➚<br> Connect</div>
-        <div class="side front"></div>
-        <div class="side back"></div>
-        <div  class="side left"></div>
-        <div class="side right"></div>
-      </div>
+    <!-- 3D Cube -->
+    <div class="cube-wrap">
+        <div class="cube">
+            <div class="side top"></div>
+            <div onclick="letsConnect()" class="side bottom">Let's ➚<br> Connect</div>
+            <div class="side front"></div>
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+        </div>
     </div>
 
-
-<div id="wrapper">
-    <div id="landingArea">
-        <div id="header" onclick="scrollHeader()">
-
-            
-
-            <div id="cornerLogo"><h1 id="squig">{</h1>
-                <h3>Marquette <br> Hanson</h3>
-            <h1 id="squig">}</h1></div> 
-            <div id="headerTags">
-                <h1 onclick="scrollToSkills()" id="topic">Skills & Experience</h1>
-                <h1 onclick="scrollToEducation()" id="topic">Education</h1>
-                <h1 id="topic">Projects</h1>
-                <h1 id="topic">Open Source</h1>
-                <h1 id="topic">Contact Me</h"skils1>
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+        <!-- Landing Area -->
+        <div id="landingArea">
+            <!-- Header -->
+            <div id="header" onclick="scrollHeader()">
+                <div id="cornerLogo">
+                    <h1 id="squig">{</h1>
+                    <h3>Marquette <br> Hanson</h3>
+                    <h1 id="squig">}</h1>
+                </div>
+                <div id="headerTags">
+                    <h1 onclick="scrollToSkills()" id="topic">Skills & Experience</h1>
+                    <h1 onclick="scrollToEducation()" id="topic">Education</h1>
+                    <h1 id="topic">Projects</h1>
+                    <h1 id="topic">Open Source</h1>
+                    <h1 id="topic">Contact Me</h1>
+                </div>
             </div>
-        </div>
 
-        <div id="intro">
-            
-                <h1>Hello world<br><span id="iAm">I am</span></h1>              
+            <!-- Introduction -->
+            <div id="intro">
+                <h1>Hello world<br><span id="iAm">I am</span></h1>
                 <h1 id="nameIntro">Marquette Hanson</h1>
-                
                 <div id="video-container">
                     <video autoplay loop muted playsinline width="500">
                         <source src="assets/gif/quetteAI.mp4" type="video/mp4">
@@ -61,47 +59,70 @@
                     </video>
                 </div>
             </div>
-                    <h4 id="description"></h4>
-                    <h4 id="secondDescription">from Raleigh, North Carolina who enjoys  problem solving,<br> and bringing ideas to life on the web</h4>
-                    <h1 id="skillsHeader">Skills & Experience</h1>
+            <h4 id="description"></h4>
+            <h4 id="secondDescription">from Raleigh, North Carolina who enjoys problem solving,<br> and bringing ideas to life on the web</h4>
+            <h1 id="skillsHeader">Skills & Experience</h1>
+        </div>
 
-    </div>    
+        <!-- Skills Area -->
+        <div id="skillsArea"></div>
 
-    <div id="skillsArea">
-        
-    </div>
-    <div id='educationArea'>
-    <h1 onclick="scrollToEducation()" id="skillsHeader">Education</h1>
-<div id="educationGifContainer">
-<img id='educationGif' src="assets/gif/learn!.gif" height="400">
+        <!-- Education Area -->
+        <div id="educationArea">
+            <h1 onclick="scrollToEducation()" id="skillsHeader">Education</h1>
+            <div id="educationGifContainer">
+                <img id="educationGif" src="assets/gif/learn!.gif" height="400">
+            </div>
+            <div id="schoolsContainer">
+                <img id="codeTheDreamImg" src="assets/images/codeTheDreamLogo.png" height="60">
+                <h2 onclick="openCodeTheDream()" id="codeTheDream">Code The Dream</h2>
+                <div id="schoolInfo0">
+                    <h3>Advanced Javascript coursework</h3>
+                    <h4>March 2025 - May 2025</h4>
+                    <h4>• Node.js / Express</h4>
+                </div>
+                <img id="mizzouImg" src="assets/images/mizzouPortfolio.png" height="60">
+                <h2 id="mizzouLabel">University of Missouri</h2>
+                <div id="schoolInfo">
+                    <h3>Bachelor of Science</h3>
+                    <h4>August 2018 - May 2022</h4>
+                    <h4>• Major in Sport Management</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Area -->
+        <div>
+            <h1 id="skillsHeader">Projects</h1>
+            <!-- Add project content here -->
+        </div>
+
+        <!-- Open Source Area -->
+        <div>
+            <h1 id="skillsHeader">Open Source</h1>
+            <!-- Add open source content here -->
+        </div>
+    
+
+    <!-- Footer -->
+    <footer id="foot">
+        <h1>Marquette Hanson</h1>
+        <h3>infoin | info infonfn | fnskjnc</h3>
+        <img src="assets/images/link.png">
+        <img src="assets/images/gitIcon.png">
+        <img src="assets/images/email.png">
+        <img src="assets/images/insta.png">
+        <button id="butt">Resume</button>
+        <button onclick="addLike()" id="like">👍</button>
+
+        <div id="countLikes"><h1 id="likedPage"></h1><h3>people have liked this site</h3></div>
+        <div id="speechPic">
+            <img id="speechBub" onclick="blogPreview()" src="assets/images/speechbub.png">
+        </div>
+
+    </footer>
 </div>
-
-<div id="schoolsContainer">
-    <img id="codeTheDreamImg" src="assets/images/codeTheDreamLogo.png" height="60">
-<h2 onclick="openCodeTheDream()" id="codeTheDream">Code The Dream</h2>
-<div id="schoolInfo0">
-<h3>Advanced Javascript coursework</h3>
-<h4> March 2025 - May 2025</h4>
-<h4>• Node.js / Express</h4>
-</div>
-<img id="mizzouImg" src="assets/images/mizzouPortfolio.png" height="60">
-<h2 id="mizzouLabel">University of Missouri</h2>
-
-<div id="schoolInfo">
-<h3>Bachelor of Science</h3>
-<h4> August 2018 - May 2022</h4>
-<h4>• Major in Sport Management</h4>
-</div>
-</div>
-
-</div>
-
-
-
-
-</div>
-
-
+    <!-- Scripts -->
     <script src="scripts/main.js"></script>
 </body>
 </html>
