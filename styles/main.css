@@ -598,9 +598,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-#projectCard img{
- 
-}
+
 #projPhoto{
   height:400px; 
   width: 600px;
@@ -625,26 +623,39 @@ footer {
 #scroll-container img {
   padding: 20px;
   opacity: 0.85;
+  
 }
 #scroll-container img:hover {
   opacity: 2;
-  
+;
 }
 
 #techContain img{
-  
+  margin-left: 5%;
   height:40px;
 }
 #techContain{
   padding: 0%;
- 
  align-content: flex-start;
  align-self: flex-start;
  left: 0%;
  color: rgb(5, 142, 255);
- font-size: 50%;
+ font-size: 100%;
 }
-
+#projectName{
+  font-size: 5.5vh;
+ -webkit-animation: glow 1s ease-in-out infinite alternate;
+ -moz-animation: glow 1s ease-in-out infinite alternate;
+ animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.541), 0 0 20px rgba(255, 255, 255, 0.541), 0 0 30px #00a5e68c, 0 0 40px #00a5e680, 0 0 50px #00a5e680, 0 0 60px #00a5e67e, 0 0 70px #00a5e693;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.568), 0 0 30px #ffffff88, 0 0 40px #2b87ff8c, 0 0 50px #2b87ff8c, 0 0 60px #2b87ff8c, 0 0 70px #2b87ff8c, 0 0 80px #2b87ff8c;
+  }
+}
 #foot img{
   cursor: pointer;
 }
