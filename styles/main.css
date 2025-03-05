@@ -15,6 +15,15 @@ html {
   font-style: normal;
  
 }
+@keyframes slide {
+  from {
+    transform: translateY(10%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
 /* Mobile first styles (for smaller screens) */
 @media (max-width: 768px) {
   /* Adjust navigation for small screens */
@@ -39,6 +48,7 @@ html {
   /* Adjust elements in the skills section */
   #skillsArea {
     padding: 20px;
+
   }
 
   #skillsArea figure {
@@ -583,8 +593,65 @@ footer {
  
 }
 
-#speechPic{
+#projectCard{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#projectCard img{
  
+}
+#projPhoto{
+  height:400px; 
+  width: 600px;
+  border: rgb(255, 255, 255) solid 3px;
+  
+}
+
+#openSource{
+  margin-bottom: 40%;
+}
+
+#scroll-container {
+  position: relative;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  padding-bottom: 0%;
+}
+
+#scroll-container img {
+  padding: 20px;
+  opacity: 0.85;
+}
+#scroll-container img:hover {
+  opacity: 2;
+  
+}
+
+#techContain img{
+  
+  height:40px;
+}
+#techContain{
+  padding: 0%;
  
- 
+ align-content: flex-start;
+ align-self: flex-start;
+ left: 0%;
+ color: rgb(5, 142, 255);
+ font-size: 50%;
+}
+
+#foot img{
+  cursor: pointer;
+}
+#foot img:hover{
+  filter: drop-shadow(0 0 0.99rem rgba(255, 255, 255, 0.434));
+
+}
+#foot button{
+  cursor: pointer;
 }

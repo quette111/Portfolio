@@ -42,7 +42,7 @@
                 <div id="headerTags">
                     <h1 onclick="scrollToSkills()" id="topic">Skills & Experience</h1>
                     <h1 onclick="scrollToEducation()" id="topic">Education</h1>
-                    <h1 id="topic">Projects</h1>
+                    <h1 onclick="scrollToProjects()" id="topic">Projects</h1>
                     <h1 id="topic">Open Source</h1>
                     <h1 id="topic">Contact Me</h1>
                 </div>
@@ -65,7 +65,43 @@
         </div>
 
         <!-- Skills Area -->
-        <div id="skillsArea"></div>
+        <div id="skillsArea">
+            <div id='languageDiv'>
+
+               
+                <h2 id="pLan">Programming Languages</h2>
+                <img onclick='turnRight1()' id='arrowRight' src='assets/images/arrowR.png'>
+                <img onclick='turnLeft1()' id='arrowLeft' src='assets/images/arrowLeft.png'>
+
+                    <figure id="jsFig">
+                    <img id='imgJ' src="assets/images/js.png">
+                    <figcaption id='figCaptionJ'>Javascript</figcaption>
+                        
+                    </figure>
+                    
+                 </div>   
+                <div id='frameworks'>
+                
+                    <h2 id="pLan">Frameworks & Libraries</h2>
+                    <img onclick='turnRight2()' id='arrowRight' src='assets/images/arrowR.png'>
+                <img onclick='turnLeft2()' id='arrowLeft' src='assets/images/arrowLeft.png'>
+                        <figure id="jsFig">
+                            <img id="scriptImg" src="assets/images/react.png" type="video/mp4">
+                            <figcaption id='reactCaption'>React</figcaption>
+                        </figure>
+                </div>
+                <div id='tools'>
+               
+                    <h2 id="pLan">Tools</h2>
+                     <img onclick='turnRight3()' id='arrowRight' src='assets/images/arrowR.png'>
+                <img onclick='turnLeft3()' id='arrowLeft' src='assets/images/arrowLeft.png'>
+                        <figure id="jsFig">
+                            <img id="jsImg" src="assets/images/vscode.png" type="video/mp4">
+                            <figcaption id='toolCaption'>VSCode</figcaption>
+                        </figure>
+                </div>
+        
+        </div>
 
         <!-- Education Area -->
         <div id="educationArea">
@@ -94,13 +130,18 @@
         <!-- Projects Area -->
         <div>
             <h1 id="skillsHeader">Projects</h1>
-            <!-- Add project content here -->
+            <div id='projectCard'>
+               
+
+            </div>
         </div>
 
         <!-- Open Source Area -->
         <div>
             <h1 id="skillsHeader">Open Source</h1>
-            <!-- Add open source content here -->
+<div id="openSource">
+    <h2>SECTION<br>PENDING<br> CONSTRUCTION</h2>
+</div>
         </div>
     
 
@@ -110,14 +151,13 @@
         <h3>infoin | info infonfn | fnskjnc</h3>
         <img src="assets/images/link.png">
         <img src="assets/images/gitIcon.png">
-        <img src="assets/images/email.png">
-        <img src="assets/images/insta.png">
+        <img a href="quettehanson@gmail.com" src="assets/images/email.png">
+        <img a href="https://www.instagram.com/quette111" src="assets/images/insta.png">
         <button id="butt">Resume</button>
         <button onclick="addLike()" id="like">👍</button>
 
         <div id="countLikes"><h1 id="likedPage"></h1><h3>people have liked this site</h3></div>
         <div id="speechPic">
-            <img id="speechBub" onclick="blogPreview()" src="assets/images/speechbub.png">
         </div>
 
     </footer>

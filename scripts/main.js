@@ -56,7 +56,13 @@ function scrollToSkills(){
 
 function scrollToEducation(){
     window.scroll({
-        top: 1460,
+        top: 1600,
+        behavior: 'smooth',
+    });
+}
+function scrollToProjects(){
+    window.scroll({
+        top: 2400,
         behavior: 'smooth',
     });
 }
@@ -87,59 +93,21 @@ const skillsArea = document.getElementById('skillsArea');
 
 
 
+window.addEventListener('scroll', function(){  //works as intended but needs to be changed for sure haha
+    if(window.scrollY > 300) {
+        skillsArea.style.cssText = "animation-name: slide;animation-duration: 2s;"
 
-
-
-
-
-window.addEventListener('scroll', function(){
-    if(window.scrollY > 100) {
-        skillsArea.innerHTML = `
-            <div id='languageDiv'>
-
-               
-                <h2 id="pLan">Programming Languages</h2>
-                <img onclick='turnRight1()' id='arrowRight' src='assets/images/arrowR.png'>
-                <img onclick='turnLeft1()' id='arrowLeft' src='assets/images/arrowLeft.png'>
-
-                    <figure id="jsFig">
-                    <img id='imgJ' src="assets/images/js.png">
-                    <figcaption id='figCaptionJ'>Javascript</figcaption>
-                        
-                    </figure>
-                    
-                 </div>   
-                <div id='frameworks'>
-                
-                    <h2 id="pLan">Frameworks & Libraries</h2>
-                    <img onclick='turnRight2()' id='arrowRight' src='assets/images/arrowR.png'>
-                <img onclick='turnLeft2()' id='arrowLeft' src='assets/images/arrowLeft.png'>
-                        <figure id="jsFig">
-                            <img id="scriptImg" src="assets/images/react.png" type="video/mp4">
-                            <figcaption id='reactCaption'>React</figcaption>
-                        </figure>
-                </div>
-                <div id='tools'>
-               
-                    <h2 id="pLan">Tools</h2>
-                     <img onclick='turnRight3()' id='arrowRight' src='assets/images/arrowR.png'>
-                <img onclick='turnLeft3()' id='arrowLeft' src='assets/images/arrowLeft.png'>
-                        <figure id="jsFig">
-                            <img id="jsImg" src="assets/images/vscode.png" type="video/mp4">
-                            <figcaption id='toolCaption'>VSCode</figcaption>
-                        </figure>
-                </div>
-        
-        `
-    }else{
-        skillsArea.innerHTML = `
-        `
-    }
-
-    
-    
+}else if(window.scrollY < 300){
+    window.addEventListener('scroll', function(){
+        if(window.scrollY > 300) {
+            skillsArea.style.cssText = "animation-name: slide;animation-duration: 2s;"
+        }else{}
+    }) 
+}
 })
- 
+
+
+
 const schoolsContainer = document.getElementById('schoolsContainer')
 window.addEventListener('scroll', function(){
     if(window.scrollY > 500) {
@@ -284,19 +252,77 @@ changeDescription()
 
 
 
-let numz = 0
 
-const likedPage = document.getElementById('likedPage');
+document.getElementById('likedPage').innerHTML =  localStorage.clickCount
+
 function addLike(){
 
-numz += 1
-likedPage.innerHTML = `${numz}`   
+if (localStorage.clickCount){
+    localStorage.clickCount = Number(localStorage.clickCount)+1;
+} else {
+    localStorage.clickCount = 1
+}
+
+
+document.getElementById('likedPage').innerHTML =  localStorage.clickCount
 
 
 }
 
+let projects = [
+    {
+        "Project": "Astro Dodge",
+        "Image1": "assets/images/rrLanding.png",
+        "Image2": "assets/images/rrOver.png",
+        "Image3": "assets/images/rrPlay.png",
+        "Image4": "assets/images/htmll.png",
+        "Image5": "assets/images/css.png",
+        "Image6": "assets/images/js.png"
+    },
+    {
+        "Project": "Lift Logic",
+        "Image1": "assets/images/exLanding.png",
+        "Image2": "assets/images/exCalc.png",
+        "Image3": "assets/images/exDB.png",
+        "Image4": "assets/images/htmll.png",
+        "Image5": "assets/images/css.png",
+        "Image6": "assets/images/js.png"
+    }  
+]
 
 
-function blogPreview(){
+
+
+
+document.getElementById('projectCard').innerHTML = projects.map((item) => 
+
+  ` <h2 id="projectName">${item.Project}</h2>
+
+<div id="scroll-container">
+
+    <img id='projPhoto' src="${item.Image1}"> 
+    <img id='projPhoto' src="${item.Image2}">
+    <img id='projPhoto' src="${item.Image3}">
+</div>
+    <div id='techContain'>
+    <h3>Technology used:</h3>
+        <img id='techPhoto' src="${item.Image4}">
+        <img id='techPhoto' src="${item.Image5}">
+        <img id='techPhoto' src="${item.Image6}">
+    </div>`).join("");
+
+
+
+    window.addEventListener('scroll', function(){  
+        if(window.scrollY > 1450) {
+            document.getElementById('projectCard').style.cssText = "animation-name: slide;animation-duration: 3s;"
     
-}
+    }})
+
+    
+
+    window.addEventListener('scroll', function(){  
+        if(window.scrollY > 500) {
+            document.getElementById('schoolsContainer').style.cssText = "animation-name: slide;animation-duration: 3s;"
+    
+    }})
