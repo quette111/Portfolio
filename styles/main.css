@@ -5,7 +5,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  color: white;
+  color: rgba(255, 255, 255, 0.993);
   /*font-family: 'MyCustomFont', arial, serif; */
   background-color: black;
   animation: body 1s linear;
