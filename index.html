@@ -33,24 +33,33 @@
         <!-- Landing Area -->
         <div id="landingArea">
             <!-- Header -->
-            <div id="header" onclick="scrollHeader()">
+            <div id="header">
                 <div id="cornerLogo">
                     <h1 id="squig">{</h1>
                     <h3>Marquette <br> Hanson</h3>
                     <h1 id="squig">}</h1>
                 </div>
-                <div id="headerTags">
-                    <h1 onclick="scrollToSkills()" id="topic">Skills & Experience</h1>
+                <div id="sideBar">
+                    <h1 onclick="exitMenu()" id="exitSidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></h1>
+                    <h1 onclick="scrollToSkills()" id="topic">Skills/Experience</h1>
                     <h1 onclick="scrollToEducation()" id="topic">Education</h1>
                     <h1 onclick="scrollToProjects()" id="topic">Projects</h1>
                     <h1 id="topic">Open Source</h1>
                     <h1 id="topic">Contact Me</h1>
                 </div>
+                <div id="headerTags">
+                    <h1 class='hideOnMobile' onclick="scrollToSkills()" id="topic">Skills & Experience</h1>
+                    <h1 class='hideOnMobile'  onclick="scrollToEducation()" id="topic">Education</h1>
+                    <h1 class='hideOnMobile'  onclick="scrollToProjects()" id="topic">Projects</h1>
+                    <h1 class='hideOnMobile'  id="topic">Open Source</h1>
+                    <h1 class='hideOnMobile'  id="topic">Contact Me</h1>
+                    <h1  id="menuButton" onclick="displayMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></h1>
+                </div>
             </div>
 
             <!-- Introduction -->
             <div id="intro">
-                <h1>Hello world<br><span id="iAm">I am</span></h1>
+                <h1>Hello<br><span id="iAm">I am</span></h1>
                 <h1 id="nameIntro">Marquette Hanson</h1>
                 <div id="video-container">
                     <video autoplay loop muted playsinline width="500">
@@ -69,7 +78,7 @@
             <div id='languageDiv'>
 
                
-                <h2 id="pLan">Programming Languages</h2>
+                <h2 id="pLan">Languages</h2>
                 <img onclick='turnRight1()' id='arrowRight' src='assets/images/arrowR.png'>
                 <img onclick='turnLeft1()' id='arrowLeft' src='assets/images/arrowLeft.png'>
 
@@ -82,7 +91,7 @@
                  </div>   
                 <div id='frameworks'>
                 
-                    <h2 id="pLan">Frameworks & Libraries</h2>
+                    <h2 id="pLan">Frameworks</h2>
                     <img onclick='turnRight2()' id='arrowRight' src='assets/images/arrowR.png'>
                 <img onclick='turnLeft2()' id='arrowLeft' src='assets/images/arrowLeft.png'>
                         <figure id="jsFig">
@@ -92,7 +101,7 @@
                 </div>
                 <div id='tools'>
                
-                    <h2 id="pLan">Tools</h2>
+                    <h2 id="pLan">Tool</h2>
                      <img onclick='turnRight3()' id='arrowRight' src='assets/images/arrowR.png'>
                 <img onclick='turnLeft3()' id='arrowLeft' src='assets/images/arrowLeft.png'>
                         <figure id="jsFig">
@@ -129,7 +138,20 @@
 
         <!-- Projects Area -->
         <div>
+                
             <h1 id="skillsHeader">Projects</h1>
+            <section id="star">
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                        <span id="str"></span>
+                    </section>
             <div id='projectCard'>
                
 

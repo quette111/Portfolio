@@ -326,3 +326,17 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
             document.getElementById('schoolsContainer').style.cssText = "animation-name: slide;animation-duration: 3s;"
     
     }})
+
+  
+
+    
+
+    function exitMenu(){
+        document.getElementById('sideBar').style.cssText = 'display:none';
+        console.log('clicked')
+    }
+
+    function displayMenu(){
+        document.getElementById('sideBar').style.cssText = 'display:flex';
+
+    }
