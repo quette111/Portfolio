@@ -287,6 +287,15 @@ let projects = [
         "Image4": "assets/images/htmll.png",
         "Image5": "assets/images/css.png",
         "Image6": "assets/images/js.png"
+    },
+    {
+        "Project": "Job Log",
+        "Image1": "assets/images/jobLogLanding.png",
+        "Image2": "assets/images/jobLogEdit.png",
+        "Image3": "assets/images/jobLogStatus.png",
+        "Image4": "assets/images/htmll.png",
+        "Image5": "assets/images/css.png",
+        "Image6": "assets/images/js.png"
     }  
 ]
 
