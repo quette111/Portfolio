@@ -51,7 +51,7 @@
                     <h1 class='hideOnMobile' onclick="scrollToSkills()" id="topic">Skills & Experience</h1>
                     <h1 class='hideOnMobile'  onclick="scrollToEducation()" id="topic">Education</h1>
                     <h1 class='hideOnMobile'  onclick="scrollToProjects()" id="topic">Projects</h1>
-                    <h1 class='hideOnMobile'  id="topic">Open Source</h1>
+                    <h1 class='hideOnMobile'  id="topic"></h1>
                     <h1 class='hideOnMobile'  id="topic">Contact Me</h1>
                     <h1  id="menuButton" onclick="displayMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></h1>
                 </div>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <h4 id="description"></h4>
-            <h4 id="secondDescription">from Raleigh, North Carolina who enjoys problem solving,<br> and bringing ideas to life on the web</h4>
+            <h4 id="secondDescription">from North Carolina who enjoys problem solving,<br> and bringing ideas to life on the web</h4>
             <h1 id="skillsHeader">Skills & Experience</h1>
         </div>
 
@@ -91,7 +91,7 @@
                  </div>   
                 <div id='frameworks'>
                 
-                    <h2 id="pLan">Frameworks</h2>
+                    <h2 id="pLan">Frameworks & Libraries</h2>
                     <img onclick='turnRight2()' id='arrowRight' src='assets/images/arrowR.png'>
                 <img onclick='turnLeft2()' id='arrowLeft' src='assets/images/arrowLeft.png'>
                         <figure id="jsFig">
@@ -101,7 +101,7 @@
                 </div>
                 <div id='tools'>
                
-                    <h2 id="pLan">Tool</h2>
+                    <h2 id="pLan">Tools & Platforms</h2>
                      <img onclick='turnRight3()' id='arrowRight' src='assets/images/arrowR.png'>
                 <img onclick='turnLeft3()' id='arrowLeft' src='assets/images/arrowLeft.png'>
                         <figure id="jsFig">
@@ -115,32 +115,53 @@
         <!-- Education Area -->
         <div id="educationArea">
             <h1 onclick="scrollToEducation()" id="skillsHeader">Education</h1>
-            <div id="educationGifContainer">
-                <img id="educationGif" src="assets/gif/learn!.gif" height="400">
-            </div>
+           <!-- <div id="educationGifContainer">
+             <img id="educationGif"  height="400"> 
+            </div>-->
             <div id="schoolsContainer">
-                <img id="codeTheDreamImg" src="assets/images/codeTheDreamLogo.png" height="60">
-                <h2 onclick="openCodeTheDream()" id="codeTheDream">Code The Dream</h2>
-                <div id="schoolInfo0">
-                    <h3>Advanced Javascript coursework</h3>
-                    <h4>March 2025 - May 2025</h4>
-                    <h4>• Node.js / Express</h4>
-                </div>
-                <img id="mizzouImg" src="assets/images/mizzouPortfolio.png" height="60">
-                <h2 id="mizzouLabel">University of Missouri</h2>
-                <div id="schoolInfo">
-                    <h3>Bachelor of Science</h3>
-                    <h4>August 2018 - May 2022</h4>
-                    <h4>• Major in Sport Management</h4>
-                </div>
-            </div>
+        
+                  <div class="schoolItem">
+    <img class="schoolLogo" 
+         src="assets/images/codeTheDreamLogo.png" 
+         alt="Code The Dream logo">
+    <div class="schoolContent">
+      <h2 onclick="openCodeTheDream()">Code The Dream
+        <a target="_blank" rel="noopener noreferrer">
+          <img class="openInNewWindow" src="assets/images/open.png">
+        </a>
+      </h2>
+      <div class="schoolInfo">
+        <h3>
+          Server Side Javascript Certificate Program
+          <a target="_blank" rel="noopener noreferrer"
+             href="https://drive.google.com/file/d/11KuItr0zqizvcdFMS9WUgn6Js06CgF1k/view?usp=sharing">
+            <img src="assets/images/open.png">
+          </a>
+        </h3>
+        <h4>March 2025 – May 2025</h4>
+        <h4>• Node.js / Express</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="schoolItem">
+    <img class="schoolLogo" 
+         src="assets/images/mizzouPortfolio.png" 
+         alt="University of Missouri logo">
+    <div class="schoolContent">
+      <h2>University of Missouri</h2>
+      <div class="schoolInfo">
+        <h3>Bachelor of Science</h3>
+        <h4>August 2018 – May 2022</h4>
+        <h4>• Major in Sport Management</h4>
+      </div>
+    </div>
+  </div>
         </div>
 
         <!-- Projects Area -->
         <div>
-                
-            <h1 id="skillsHeader">Projects</h1>
-            <section id="star">
+                <section id="star">
                         <span id="str"></span>
                         <span id="str"></span>
                         <span id="str"></span>
@@ -152,38 +173,57 @@
                         <span id="str"></span>
                         <span id="str"></span>
                     </section>
+            <h1 id="skillsHeader">Projects</h1>
+         
             <div id='projectCard'>
+  
                
 
-            </div>
+            </div>   
         </div>
 
         <!-- Open Source Area -->
         <div>
-            <h1 id="skillsHeader">Open Source</h1>
+            <h1 id="skillsHeader"></h1>
 <div id="openSource">
-    <h2>SECTION<br>PENDING<br> CONSTRUCTION</h2>
+    <h2></h2>
 </div>
         </div>
     
 
-    <!-- Footer -->
-    <footer id="foot">
-        <h1>Marquette Hanson</h1>
-        <h3>infoin | info infonfn | fnskjnc</h3>
-        <img src="assets/images/link.png">
-        <img src="assets/images/gitIcon.png">
-        <img a href="quettehanson@gmail.com" src="assets/images/email.png">
-        <img a href="https://www.instagram.com/quette111" src="assets/images/insta.png">
-        <button id="butt">Resume</button>
-        <button onclick="addLike()" id="like">👍</button>
+ <footer id="foot">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h1>Marquette Hanson</h1>
+      <p>JavaScript Developer|Durham, NC</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <img src="assets/images/link.png" alt="LinkedIn icon">
+      </a>
+      <a href="https://github.com/quette111" target="_blank" aria-label="GitHub">
+        <img src="assets/images/gitIcon.png" alt="GitHub icon">
+      </a>
+      <a href="mailto:marquettehanson@gmail.com" aria-label="Email">
+        <img src="assets/images/email.png" alt="Email icon">
+      </a>
+      <a href="https://www.instagram.com/quettehanson" target="_blank" aria-label="Instagram">
+        <img src="assets/images/insta.png" alt="Instagram icon">
+      </a>
+    </div>
+  </div>
 
-        <div id="countLikes"><h1 id="likedPage"></h1><h3>people have liked this site</h3></div>
-        <div id="speechPic">
-        </div>
+  <div class="footer-actions">
+    <button id="resumeBtn">Resume</button>
+    <button id="likeBtn" onclick="addLike()">👍 Like</button>
+  </div>
 
-    </footer>
-</div>
+  <div class="footer-stats">
+    <span id="likedPage">0</span>
+    <span>people have liked this site</span>
+  </div>
+</footer>
+
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
 </body>

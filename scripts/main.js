@@ -74,14 +74,18 @@ const techArray = [
 ];
 
 const frameArray = [
-    {name: 'React', image: 'assets/images/react.png'},
-    {name: 'Bootstrap', image: 'assets/images/bootstrap.png'},
+    {name: 'Express', image: 'assets/images/express2.png'},
+    {name: 'Node.js', image: 'assets/images/node2.png'},
+    {name: 'Mongoose', image: 'assets/images/mongo.png'},
+    {name: 'Chart.js', image: 'assets/images/chart.png'},
 ];
 
 const toolArray = [
     {name: 'Visual Studio Code', image: 'assets/images/vscode.png'},
     {name: 'Git', image: 'assets/images/git.png'},
-    {name: 'GitHub', image: 'assets/images/github.png'}
+    {name: 'GitHub', image: 'assets/images/github.png'}, 
+    {name: 'Webpack', image: 'assets/images/webpack.png'}, 
+    {name: 'Postman', image: 'assets/images/postman.png'}
 ];
 
 
@@ -93,7 +97,7 @@ const skillsArea = document.getElementById('skillsArea');
 
 
 
-window.addEventListener('scroll', function(){  //works as intended but needs to be changed for sure haha
+window.addEventListener('scroll', function(){  //works as intended but needs to be changed 
     if(window.scrollY > 300) {
         skillsArea.style.cssText = "animation-name: slide;animation-duration: 2s;"
 
@@ -125,7 +129,7 @@ const title2 = document.getElementById('reactCaption')
 const img3 = document.getElementById('jsImg')
     const title3 = document.getElementById('toolCaption')
 
-    // Optional: Initialize with first image
+
     img.src = techArray[i].image;
     title.innerHTML = techArray[i].name;
     img2.src = frameArray[i].image;
@@ -143,6 +147,13 @@ const img3 = document.getElementById('jsImg')
 
 });
 
+
+/*document.getElementById(arrowRight).addEventListener((e)=>{
+    e.stopPropagation()
+    turnRight1()
+})
+
+*/
 function turnRight1() {
     if (i < techArray.length - 1) { // Prevent going out of bounds
         i++;
@@ -217,6 +228,7 @@ function turnRight3(){
 }
 
 function turnLeft3(){
+    
     if (i > toolArray.length - toolArray.length){
         i--
     } else{
@@ -270,32 +282,32 @@ document.getElementById('likedPage').innerHTML =  localStorage.clickCount
 }
 
 let projects = [
+    
     {
+        "Project": "Job Log",
+        "url": "https://job-log.onrender.com/",
+        "Image1": "assets/images/jlLanding.png",
+        "Image2": "assets/images/jobLog11.png",
+        "Image3": "assets/images/jobLog22.png",
+        "Image4": "assets/images/htmll.png",
+        "Image5": "assets/images/css.png",
+        "Image6": "assets/images/js.png",
+        "Image7": "assets/images/express.png",
+        "Image8": "assets/images/mongo.png",
+        "Image9": "assets/images/webpack.png",
+    },{
         "Project": "Astro Dodge",
+        "url": "",
         "Image1": "assets/images/rrLanding.png",
         "Image2": "assets/images/rrOver.png",
         "Image3": "assets/images/rrPlay.png",
         "Image4": "assets/images/htmll.png",
         "Image5": "assets/images/css.png",
-        "Image6": "assets/images/js.png"
-    },
-    {
-        "Project": "Lift Logic",
-        "Image1": "assets/images/exLanding.png",
-        "Image2": "assets/images/exCalc.png",
-        "Image3": "assets/images/exDB.png",
-        "Image4": "assets/images/htmll.png",
-        "Image5": "assets/images/css.png",
-        "Image6": "assets/images/js.png"
-    },
-    {
-        "Project": "Job Log",
-        "Image1": "assets/images/jobLogLanding.png",
-        "Image2": "assets/images/jobLogEdit.png",
-        "Image3": "assets/images/jobLogStatus.png",
-        "Image4": "assets/images/htmll.png",
-        "Image5": "assets/images/css.png",
-        "Image6": "assets/images/js.png"
+        "Image6": "assets/images/js.png",
+        "Image7": "assets/images/block.png",
+        "Image8": "assets/images/block.png",
+        "Image9": "assets/images/block.png"
+
     }  
 ]
 
@@ -305,7 +317,7 @@ let projects = [
 
 document.getElementById('projectCard').innerHTML = projects.map((item) => 
 
-  ` <h2 id="projectName">${item.Project}</h2>
+  ` <h2 id="projectName">${item.Project}<a target="_blank" rel="noopener noreferrer" href='${item.url}'><img class='openInNewWindow' src='assets/images/open.png'></img></a></h2>
 
 <div id="scroll-container">
 
@@ -317,27 +329,38 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
     <h3>Technology used:</h3>
         <img id='techPhoto' src="${item.Image4}">
         <img id='techPhoto' src="${item.Image5}">
-        <img id='techPhoto' src="${item.Image6}">
+        <img id='techPhoto' src="${item.Image6}"><br>
+        <img id='techPhoto' src="${item.Image7}">
+        <img id='techPhoto' src="${item.Image8}">
+        <img id='techPhoto' src="${item.Image9}">
     </div>`).join("");
 
 
 
-    window.addEventListener('scroll', function(){  
+
+    window.addEventListener('scroll', function(e){  
         if(window.scrollY > 1450) {
+            e.preventDefault()
             document.getElementById('projectCard').style.cssText = "animation-name: slide;animation-duration: 3s;"
     
     }})
 
     
 
-    window.addEventListener('scroll', function(){  
+    window.addEventListener('scroll', function(e){  
         if(window.scrollY > 500) {
+            e.preventDefault()
             document.getElementById('schoolsContainer').style.cssText = "animation-name: slide;animation-duration: 3s;"
     
     }})
 
   
+  document.addEventListener('scroll', function(e){  
+     
 
+            document.querySelector('.cube').style.cssText = "animation-name: fadeOut;animation-duration: 3s;"
+    
+    })
     
 
     function exitMenu(){
