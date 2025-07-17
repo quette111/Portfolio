@@ -77,7 +77,7 @@ const frameArray = [
     {name: 'Express', image: 'assets/images/express2.png'},
     {name: 'Node.js', image: 'assets/images/node2.png'},
     {name: 'Mongoose', image: 'assets/images/mongo.png'},
-    {name: 'Chart.js', image: 'assets/images/chart.png'},
+    {name: 'Chart.js', image: 'assets/images/chart.svg'},
 ];
 
 const toolArray = [
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const img = document.getElementById("imgJ");
     const title = document.getElementById("figCaptionJ");
     const img2 = document.getElementById('scriptImg')
-const title2 = document.getElementById('reactCaption')
+const title2 = document.getElementsByClassName('reactCaption')
 const img3 = document.getElementById('jsImg')
     const title3 = document.getElementById('toolCaption')
 
@@ -137,12 +137,12 @@ const img3 = document.getElementById('jsImg')
     img3.src = toolArray[i].image;
     title3.innerHTML = toolArray[i].name;
 
-    document.getElementById("arrowRight").addEventListener("click", turnRight1);
-    document.getElementById("arrowLeft").addEventListener("click", turnLeft1);
-    document.getElementById("arrowRight").addEventListener("click", turnRight2);
-    document.getElementById("arrowLeft").addEventListener("click", turnLeft2);
-    document.getElementById("arrowRight").addEventListener("click", turnRight3);
-    document.getElementById("arrowLeft").addEventListener("click", turnLeft3);
+    document.getElementById("right1").addEventListener("click", turnRight1);
+    document.getElementById("left1").addEventListener("click", turnLeft1);
+    document.getElementById("right2").addEventListener("click", turnRight2);
+    document.getElementById("left2").addEventListener("click", turnLeft2);
+    document.getElementById("right3").addEventListener("click", turnRight3);
+    document.getElementById("left3").addEventListener("click", turnLeft3);
     
 
 });
@@ -154,91 +154,100 @@ const img3 = document.getElementById('jsImg')
 })
 
 */
+
+let langIndex  = 0;
+
+
+
 function turnRight1() {
-    if (i < techArray.length - 1) { // Prevent going out of bounds
-        i++;
+
+    if (langIndex < techArray.length - 1) { // Prevent going out of bounds
+        langIndex++;
     } else {
-        i = 0; // Loop back to the start if at the end
+        langIndex = 0; // Loop back to the start if at the end
     }
 
     const img = document.getElementById("imgJ");
     const title = document.getElementById("figCaptionJ");
 
-    img.src = techArray[i].image;
-    title.innerHTML = techArray[i].name;
+    img.src = techArray[langIndex].image;
+    title.innerHTML = techArray[langIndex].name;
 }
 
 
 
 function turnLeft1(){
-    if ( i > techArray.length - techArray.length) {
-        i--
+    if ( langIndex > techArray.length - techArray.length) {
+        langIndex--
     } else {
-        i = 2
+        langIndex = 2
     }
 const img = document.getElementById('imgJ')
 const title = document.getElementById('figCaptionJ')
-        img.src = techArray[i].image;
-        title.innerHTML = techArray[i].name;
+        img.src = techArray[langIndex].image;
+        title.innerHTML = techArray[langIndex].name;
 }  
 
-
+let frameIndex = 0;
 
 function turnRight2(){
-    if (i < frameArray.length - 1){
-        i++;
+    if (frameIndex < frameArray.length - 1){
+        frameIndex++;
     } else {
-        i = 0
+        frameIndex = 0
     }
 const img2 = document.getElementById('scriptImg')
 const title2 = document.getElementById('reactCaption')
-    img2.src = frameArray[i].image;
-    title2.innerHTML = frameArray[i].name;
+    img2.src = frameArray[frameIndex].image;
+    title2.innerHTML = frameArray[frameIndex].name;
     
 
 }
 
 function turnLeft2(){
-    if (i > frameArray.length - frameArray.length){
-        i--
+    if (frameIndex > frameArray.length - frameArray.length){
+        frameIndex--
     } else{
-        i = 1
+        frameIndex = 1
     }
 
 
 const img2 = document.getElementById('scriptImg')
 const title2 = document.getElementById('reactCaption')
-        img2.src = frameArray[i].image;
-        title2.innerHTML = frameArray[i].name;
+        img2.src = frameArray[frameIndex].image;
+        title2.innerHTML = frameArray[frameIndex].name;
 }  
 
+
+let toolIndex  = 0;
+
 function turnRight3(){
-    if (i < toolArray.length - 1){
-        i++
+    if (toolIndex < toolArray.length - 1){
+        toolIndex++
     } else{
-        i = 0
+        toolIndex = 0
     }
 
     const img3 = document.getElementById('jsImg')
     const title3 = document.getElementById('toolCaption')
-        img3.src = toolArray[i].image;
-        title3.innerHTML = toolArray[i].name;
+        img3.src = toolArray[toolIndex].image;
+        title3.innerHTML = toolArray[toolIndex].name;
         
     
 }
 
 function turnLeft3(){
     
-    if (i > toolArray.length - toolArray.length){
-        i--
+    if (toolIndex > toolArray.length - toolArray.length){
+        toolIndex--
     } else{
-        i = 2
+        toolIndex = 2
     }
 
     const img3 = document.getElementById('jsImg')
     const title3 = document.getElementById('toolCaption')
-        img3.src = toolArray[i].image;
-        title3.innerHTML = toolArray[i].name;
+        img3.src = toolArray[toolIndex].image;
+        title3.innerHTML = toolArray[toolIndex].name;
 }  
 
 
@@ -342,6 +351,7 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
         if(window.scrollY > 1450) {
             e.preventDefault()
             document.getElementById('projectCard').style.cssText = "animation-name: slide;animation-duration: 3s;"
+              document.getElementsByClassName('.cube').style.display="none";
     
     }})
 
@@ -350,18 +360,22 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
     window.addEventListener('scroll', function(e){  
         if(window.scrollY > 500) {
             e.preventDefault()
+            console.log('hello')
             document.getElementById('schoolsContainer').style.cssText = "animation-name: slide;animation-duration: 3s;"
     
     }})
 
-  
-  document.addEventListener('scroll', function(e){  
-     
 
-            document.querySelector('.cube').style.cssText = "animation-name: fadeOut;animation-duration: 3s;"
-    
+  
+  window.addEventListener('scroll', function(e){  
+
+
+            //document.getElementsByClassName('.cube').style.cssText = "animation-name: fadeOut;animation-duration: 3s;"
+            //document.getElementsByClassName('.cube-wrap').style.cssText = "animation-name: fadeOut;animation-duration: 3s;"
+        document.querySelector('.cube-wrap').style.display="none";
     })
-    
+
+
 
     function exitMenu(){
         document.getElementById('sideBar').style.cssText = 'display:none';
@@ -372,3 +386,5 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
         document.getElementById('sideBar').style.cssText = 'display:flex';
 
     }
+
+

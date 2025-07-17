@@ -48,7 +48,7 @@
                     <h1 id="topic">Contact Me</h1>
                 </div>
                 <div id="headerTags">
-                    <h1 class='hideOnMobile' onclick="scrollToSkills()" id="topic">Skills & Experience</h1>
+                    <h1 class='hideOnMobile' onclick="scrollToSkills()" id="topic">Skills</h1>
                     <h1 class='hideOnMobile'  onclick="scrollToEducation()" id="topic">Education</h1>
                     <h1 class='hideOnMobile'  onclick="scrollToProjects()" id="topic">Projects</h1>
                     <h1 class='hideOnMobile'  id="topic"></h1>
@@ -59,8 +59,8 @@
 
             <!-- Introduction -->
             <div id="intro">
-                <h1>Hello<br><span id="iAm">I am</span></h1>
-                <h1 id="nameIntro">Marquette Hanson</h1>
+               <h1 id="greeting">Hello!<br><span id="iAm"></span></h1>
+                <h1 id="nameIntro" class="myName">I am Marquette Hanson</h1>
                 <div id="video-container">
                     <video autoplay loop muted playsinline width="500">
                         <source src="assets/gif/quetteAI.mp4" type="video/mp4">
@@ -68,9 +68,11 @@
                     </video>
                 </div>
             </div>
-            <h4 id="description"></h4>
-            <h4 id="secondDescription">from North Carolina who enjoys problem solving,<br> and bringing ideas to life on the web</h4>
-            <h1 id="skillsHeader">Skills & Experience</h1>
+            <div id='descriptionWrap'>
+             <h4>I am a <span id="description"> </span> from North Carolina that enjoys problem solving, and bringing ideas to life on the web</h4>  
+            
+            </div>
+            <h1 id="skillsHeader">Skills</h1>
         </div>
 
         <!-- Skills Area -->
@@ -79,8 +81,8 @@
 
                
                 <h2 id="pLan">Languages</h2>
-                <img onclick='turnRight1()' id='arrowRight' src='assets/images/arrowR.png'>
-                <img onclick='turnLeft1()' id='arrowLeft' src='assets/images/arrowLeft.png'>
+                <img onclick='turnRight1()' id="right1" class='arrowRight' src='assets/images/arrowR.png'>
+                <img onclick='turnLeft1()' id='left1' class='arrowLeft' src='assets/images/arrowLeft.png'>
 
                     <figure id="jsFig">
                     <img id='imgJ' src="assets/images/js.png">
@@ -92,18 +94,18 @@
                 <div id='frameworks'>
                 
                     <h2 id="pLan">Frameworks & Libraries</h2>
-                    <img onclick='turnRight2()' id='arrowRight' src='assets/images/arrowR.png'>
-                <img onclick='turnLeft2()' id='arrowLeft' src='assets/images/arrowLeft.png'>
+                    <img onclick='turnRight2()' id="right2" class='arrowRight' src='assets/images/arrowR.png'>
+                <img onclick='turnLeft2()' id="left2" class='arrowLeft' src='assets/images/arrowLeft.png'>
                         <figure id="jsFig">
                             <img id="scriptImg" src="assets/images/react.png" type="video/mp4">
-                            <figcaption id='reactCaption'>React</figcaption>
+                            <figcaption class='reactCaption'>React</figcaption>
                         </figure>
                 </div>
                 <div id='tools'>
                
                     <h2 id="pLan">Tools & Platforms</h2>
-                     <img onclick='turnRight3()' id='arrowRight' src='assets/images/arrowR.png'>
-                <img onclick='turnLeft3()' id='arrowLeft' src='assets/images/arrowLeft.png'>
+                     <img onclick='turnRight3()' id="right3" class='arrowRight' src='assets/images/arrowR.png'>
+                <img onclick='turnLeft3()' id="left3" class='arrowLeft' src='assets/images/arrowLeft.png'>
                         <figure id="jsFig">
                             <img id="jsImg" src="assets/images/vscode.png" type="video/mp4">
                             <figcaption id='toolCaption'>VSCode</figcaption>
@@ -195,7 +197,7 @@
   <div class="footer-top">
     <div class="footer-brand">
       <h1>Marquette Hanson</h1>
-      <p>JavaScript Developer|Durham, NC</p>
+      <p>JavaScript Developer| Durham, NC</p>
     </div>
     <div class="footer-links">
       <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
@@ -204,7 +206,7 @@
       <a href="https://github.com/quette111" target="_blank" aria-label="GitHub">
         <img src="assets/images/gitIcon.png" alt="GitHub icon">
       </a>
-      <a href="mailto:marquettehanson@gmail.com" aria-label="Email">
+      <a href="mailto:marquette.hanson@gmail.com" aria-label="Email">
         <img src="assets/images/email.png" alt="Email icon">
       </a>
       <a href="https://www.instagram.com/quettehanson" target="_blank" aria-label="Instagram">
@@ -214,7 +216,7 @@
   </div>
 
   <div class="footer-actions">
-    <button id="resumeBtn">Resume</button>
+    <a href="https://docs.google.com/document/d/12wzBHE1Ltk5HY2beLO_da63NjdWQc0w5/edit?usp=sharing&ouid=109911898780886575669&rtpof=true&sd=true"><button id="resumeBtn">Resume</button></a>
     <button id="likeBtn" onclick="addLike()">👍 Like</button>
   </div>
 

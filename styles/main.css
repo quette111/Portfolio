@@ -15,6 +15,8 @@ html {
   font-style: normal;
 
 }
+
+
 @keyframes slide {
   from {
     transform: translateY(10%);
@@ -65,8 +67,8 @@ html {
     margin: 10px 0;
   }
 
-  #arrowLeft,
-  #arrowRight {
+  .arrowLeft,
+  .arrowRight {
     display: none;
   }
 
@@ -101,12 +103,16 @@ html {
     width: 60%;
   }
 
-  #arrowLeft,
-  #arrowRight {
+  .arrowLeft,
+  .arrowRight {
     display: block;
   }
 }
 
+
+.arrowLeft, .arrowRight{
+  cursor: pointer;
+}
 #landingArea {
   background: rgb(193, 193, 193);
   background: radial-gradient(
@@ -118,14 +124,17 @@ html {
 }
 
 #headerTags {
-  justify-content: space-between;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10%;
-  margin-left: 9%;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1rem 5%;
+  right: 0;
+ position: relative;   /* or absolute, if it’s inside a positioned container */
+  
+  left: 25%;  
 }
+
 
 #topic {
   cursor: pointer;
@@ -142,6 +151,7 @@ html {
   flex-direction: row;
   align-items: center;
   font-size: 65%;
+position:relative;
 }
 
 #cornerLogo {
@@ -150,6 +160,7 @@ html {
   align-items: center;
   gap: 2%;
   margin-left: 4%;
+  font-size: 14px;
 }
 
 #squig {
@@ -157,7 +168,6 @@ html {
 }
 
 #intro {
-  margin-left: 5%;
   font-size: 200%;
   text-align: center;
   padding: 20px;
@@ -166,6 +176,7 @@ html {
   align-items: center;
   padding-bottom: 0%;
 }
+
 
 #video-container {
  
@@ -178,21 +189,25 @@ html {
 }
 
 video {
-  max-width: 100%; /* Ensure video doesn't exceed container width */
+  width: 80vw;    /* up to 80% of viewport width */
+  max-width: 400px;
+  height: auto;
   border-radius: 50%;
-  width: 400px; /* Set the width */
-  height: 400px; /* Set the height to the same value */
-  object-fit: cover; /* Ensures the video fills the square, cropping excess */
 }
 
+
+#im{
+  margin-right: 5%;
+}
 #nameIntro {
-  padding-left: 5%;
+
+  margin-top: 40vh;
   background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap; 
   position: relative;
-  margin-top: 20%;
-  left: -20%;
+  left: -17vw;
 }
 
 #linkedLink {
@@ -215,12 +230,26 @@ video {
 
 
 #description {
+  /*
+    width: 13%;
   position: relative;
   top: -69px;
   left: 6%;
-  border: 2px solid white;
-  width: 13%;
-  padding-left: 0.5%;
+  */
+  border: solid white 1px;
+   white-space: nowrap;
+  width: 55%;
+padding-left: 0.2%;
+padding-right: 0.2%;
+ 
+
+
+}
+#descriptionWrap{
+margin-left: 5%;
+}
+#descriptionWrap h4{
+ 
 }
 #description:hover{
   opacity: 1.5;
@@ -230,9 +259,11 @@ video {
 }
 
 #secondDescription {
+  /*
   position: relative;
   top: -113px;
   left: 20%;
+  */
 }
 #skillsHeader {
   padding-left: 5%;
@@ -351,18 +382,18 @@ figcaption {
 margin-left: 40vw;
 position: absolute;
   top: 40vh;
-
+z-index: 30;
   width: 0;
     
   height: 0;
   perspective: 100vmin;
 }
 .cube {
-
+z-index: 30;
   transform-style: preserve-3d;
   transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
   animation: cube 2s linear;
-
+position: relative;
   transform-origin: center; /* Ensure transformations are applied from the center */
 }
 @keyframes cube {
@@ -457,7 +488,7 @@ position: absolute;
   align-items: center;
   gap: 4rem;
   margin: auto;
-  margin-left: 40%;
+
   width: 90%;
   max-width: 800px;
   padding-top: 2rem;
@@ -659,10 +690,10 @@ position: absolute;
 }
 
 #projPhoto{
-  height:290px; 
-  width: 420px;
-  border: rgb(255, 255, 255) solid 3px;
-  flex-direction: column;
+ width: 90vw;
+  max-width: 420px;
+  height: auto;
+  border: 3px solid #fff;
 }
 
 #openSource{
@@ -788,52 +819,10 @@ padding-left: 5%;
   }
 }
 @media(max-width: 1322px){
-  #headerTags{
-    font-size: 90%;
-  }
-}
-@media(max-width: 1198px){
-  #headerTags{
-    gap: 8%;
-  }
-}
-@media(max-width: 1044px){
-  #headerTags{
-    font-size: 70%;
-  }
+
 }
 
-@media(max-width: 1079px){
-  #headerTags{
-    font-size: 75%;
-  }
-}
-@media(max-width: 1024px){
-  #headerTags{
-    gap: 7% 
-  }
-}
-@media(max-width: 961px){
-  #headerTags{
-    gap: 6% ;
-    font-size: 80%;
-  }
-}
-@media(max-width: 950px){
-  #headerTags{
-    gap: 6% ;
-    font-size: 75%;
-   
-  }
-}
-@media(max-width: 898px){
-  #headerTags{
-    gap: 6% ;
-    font-size: 70%;
-    margin-left: 2%;
-   
-  }
-}
+
 
 #star{
   z-index: -1;
@@ -950,7 +939,7 @@ text-decoration: none;
 
 .openInNewWindow{
   position: relative;
-  left: 10%;
+  left: 5%;
   cursor: pointer;
 }
 
@@ -962,8 +951,11 @@ text-decoration: none;
    100% {opacity: 0;} 
 } 
 
+#greeting{
+  text-align: center;
+  margin-left: 4%;
+}
 
-/* 1) Make the container wrap and center its children */
 #skillsArea {
   display: flex;
   flex-wrap: wrap;
@@ -973,13 +965,13 @@ text-decoration: none;
   animation: smoothAppearance 1s ease-out forwards;
 }
 
-/* 2) Base styles for each panel */
+
 #languageDiv,
 #frameworks,
 #tools {
   position: relative;       /* for arrow positioning */
   flex: 1 1 30%;            /* grow/shrink, base width ~30% */
-  min-width: 240px;         /* never get too narrow */
+  min-width: 240px;     
   background: rgba(180,180,180,0.32);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(218,218,218,0.5);
@@ -1010,18 +1002,18 @@ text-decoration: none;
 }
 
 /* 4) Arrows positioned inside each panel */
-#languageDiv  #arrowRight,
-#frameworks    #arrowRight,
-#tools         #arrowRight {
+#languageDiv  .arrowRight,
+#frameworks    .arrowRight,
+#tools         .arrowRight {
   position: absolute;
   top: 50%;
   right: 0.5rem;
   transform: translateY(-50%);
   cursor: pointer;
 }
-#languageDiv  #arrowLeft,
-#frameworks    #arrowLeft,
-#tools         #arrowLeft {
+#languageDiv  .arrowLeft,
+#frameworks    .arrowLeft,
+#tools         .arrowLeft {
   position: absolute;
   top: 50%;
   left: 0.5rem;
@@ -1066,4 +1058,19 @@ text-decoration: none;
     width: 85vw;
    height: 90%;
   }
+}
+
+
+.myName{
+  border-right: .10em solid rgb(255, 255, 255);
+    animation: 
+
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
 }
