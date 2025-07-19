@@ -92,9 +92,49 @@ const toolArray = [
 
 const skillsArea = document.getElementById('skillsArea');
 
+console.log(techArray[0].image)
+document.getElementById('languageDiv').innerHTML = techArray.map((entry) => 
+
+
+  `
+
+
+  
+  <img class='imgJ' src='${entry.image}'></img>
+ 
+  `).join("");
+
+document.getElementById('languageDiv').innerHTML +=` <h2 class="pLan">Languages</h2>`
 
 
 
+
+document.getElementById('frameworks').innerHTML = frameArray.map((entry) => 
+
+
+  `
+
+
+  
+  <img class='imgJ' src='${entry.image}'></img>
+ 
+  `).join("");
+
+document.getElementById('frameworks').innerHTML +=` <h2 class="pLan">Frameworks & Libraries</h2>`
+
+
+document.getElementById('tools').innerHTML = toolArray.map((entry) => 
+
+
+  `
+
+
+  
+  <img class='imgJ' src='${entry.image}'></img>
+ 
+  `).join("");
+
+document.getElementById('tools').innerHTML +=`<h2 class="pLan">Tools & Platforms</h2>`
 
 
 window.addEventListener('scroll', function(){  //works as intended but needs to be changed 
@@ -120,7 +160,7 @@ window.addEventListener('scroll', function(){
 
 
 let i = 0; // Declare i globally so it retains its value
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const img = document.getElementById("imgJ");
     const title = document.getElementById("figCaptionJ");
@@ -153,7 +193,7 @@ const img3 = document.getElementById('jsImg')
     turnRight1()
 })
 
-*/
+
 
 let langIndex  = 0;
 
@@ -249,7 +289,7 @@ function turnLeft3(){
         img3.src = toolArray[toolIndex].image;
         title3.innerHTML = toolArray[toolIndex].name;
 }  
-
+*/
 
 function openCodeTheDream(){
     window.open('https://codethedream.org/');

@@ -307,43 +307,21 @@ margin-left: 5%;
   }
 }
 
-#pLan {
-  font-size: 30px;
-  background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.pLan{
+  position: absolute;
+  top:0;
   text-align: center;
-}
 
-#htFig {
-  padding-left: 50%;
-}
-
-#jsDig {
-  padding-top: 10%;
-  padding-left: 100%;
-}
-
-#lanPics {
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-}
-#lanPics img {
-  height: 40px;
-  width: 40px;
 }
 
 
 
-
-#imgJ,
-#scriptImg,
-#jsImg {
-  position: relative;
-  left: 30%;
-  padding-top: 10%;
+.imgJ{
+  margin-top: 20%;
   filter: drop-shadow(0 0 0.99rem rgb(0, 153, 255));
+ height: 7vh;
+ width: 4vw;
+
 }
 
 figcaption {
@@ -984,6 +962,10 @@ text-decoration: none;
   align-items: center;
   animation: smoothAppearance 1.5s ease-out forwards;
   transition: filter 0.3s;
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;           /* space between panels */
+  padding: 5% 2%;
 }
 #languageDiv:hover,
 #frameworks:hover,
@@ -992,7 +974,7 @@ text-decoration: none;
 }
 
 /* 3) Header styling stays the same */
-#skillsArea h2#pLan {
+#skillsArea h2.pLan {
   font-size: 30px;
   background: -webkit-linear-gradient(#eee, #37a3eb);
   -webkit-background-clip: text;
