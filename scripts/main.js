@@ -49,20 +49,20 @@ function letsConnect(){
 
 function scrollToSkills(){
     window.scroll({
-        top: 730,
+        top: 630,
         behavior: 'smooth',
     });
 }
 
 function scrollToEducation(){
     window.scroll({
-        top: 1600,
+        top: 8000,
         behavior: 'smooth',
     });
 }
 function scrollToProjects(){
     window.scroll({
-        top: 2400,
+        top: 6400,
         behavior: 'smooth',
     });
 }
@@ -295,7 +295,7 @@ function openCodeTheDream(){
     window.open('https://codethedream.org/');
 }
 
-const selfAdjectives = ['Software Developer','Analytical thinker','Tech enthusiast','Computer programmer']
+const selfAdjectives = ['web developer','problem solver','tech enthusiast']
 
 const description = document.getElementById('description');
 
@@ -347,9 +347,9 @@ let projects = [
     },{
         "Project": "Astro Dodge",
         "url": "",
-        "Image1": "assets/images/rrLanding.png",
-        "Image2": "assets/images/rrOver.png",
-        "Image3": "assets/images/rrPlay.png",
+        "Image1": "assets/images/astro1.png",
+        "Image2": "assets/images/astro2.png",
+        "Image3": "assets/images/astro3.png",
         "Image4": "assets/images/htmll.png",
         "Image5": "assets/images/css.png",
         "Image6": "assets/images/js.png",

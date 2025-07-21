@@ -124,15 +124,10 @@ html {
 }
 
 #headerTags {
+   margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 3rem;
-  margin: 1rem 5%;
-  right: 0;
- position: relative;   /* or absolute, if it’s inside a positioned container */
-  
-  left: 25%;  
+  padding-right: 1.5%;
 }
 
 
@@ -170,7 +165,7 @@ position:relative;
 #intro {
   font-size: 200%;
   text-align: center;
-  padding: 20px;
+ 
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,14 +173,17 @@ position:relative;
 }
 
 
-#video-container {
+#imgcontainer {
  
 
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  height: 400px;
+
+  height: 300px;
+  border-radius: 150px;
+  border: 1px solid white;
 }
 
 video {
