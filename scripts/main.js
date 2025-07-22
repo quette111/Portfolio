@@ -1,10 +1,10 @@
 window.addEventListener("DOMContentLoaded", function () {
-    const startTime = Date.now(); // Record the start time
-    const minLoadingTime = 2000; // Minimum loading time in milliseconds (2 seconds)
+    const startTime = Date.now(); 
+    const minLoadingTime = 2000; 
   
     let i = 0;
-    const totalIterations = 1000000; // Reduced iterations for faster completion
-    const chunkSize = 100000; // Process 100,000 iterations per chunk
+    const totalIterations = 1000000; 
+    const chunkSize = 100000; 
   
     function processChunk() {
       const end = Math.min(i + chunkSize, totalIterations);
@@ -12,24 +12,24 @@ window.addEventListener("DOMContentLoaded", function () {
         var x = i / 3.14;
       }
       if (i < totalIterations) {
-        requestAnimationFrame(processChunk); // Use requestAnimationFrame for smoother updates
+        requestAnimationFrame(processChunk); 
       } else {
-        const elapsedTime = Date.now() - startTime; // Calculate elapsed time
-        const remainingTime = minLoadingTime - elapsedTime; // Calculate remaining time
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = minLoadingTime - elapsedTime; 
   
         if (remainingTime > 0) {
-          // If the loop finished too quickly, wait for the remaining time
+         
           setTimeout(() => {
             console.log("Loop finished");
-            document.getElementById("progress").classList.add("hide"); // Hide the progress bar
-            document.getElementById("wrapper").style.display = "block"; // Show the wrapper
+            document.getElementById("progress").classList.add("hide"); 
+            document.getElementById("wrapper").style.display = "block"; 
             console.log("Loading hidden, wrapper displayed");
           }, remainingTime);
         } else {
-          // If the loop took longer than the minimum loading time, proceed immediately
+      
           console.log("Loop finished");
-          document.getElementById("progress").classList.add("hide"); // Hide the progress bar
-          document.getElementById("wrapper").style.display = "block"; // Show the wrapper
+          document.getElementById("progress").classList.add("hide"); 
+          document.getElementById("wrapper").style.display = "block"; 
           console.log("Loading hidden, wrapper displayed");
         }
       }
@@ -70,7 +70,8 @@ function scrollToProjects(){
 const techArray = [
     {name: 'Javascript', image: "assets/images/js.png"},
     {name: 'HTML', image: 'assets/images/htmll.png'},
-    {name: 'CSS', image: 'assets/images/css.png'}
+    {name: 'CSS', image: 'assets/images/css.png'},
+    {name: 'Blank', image: 'assets/images/block2.png'}
 ];
 
 const frameArray = [
@@ -104,7 +105,7 @@ document.getElementById('languageDiv').innerHTML = techArray.map((entry) =>
  
   `).join("");
 
-document.getElementById('languageDiv').innerHTML +=` <h2 class="pLan">Languages</h2>`
+document.getElementById('languageDiv').innerHTML +=` <h2 class="pLan">Programming Languages</h2>`
 
 
 
@@ -134,7 +135,7 @@ document.getElementById('tools').innerHTML = toolArray.map((entry) =>
  
   `).join("");
 
-document.getElementById('tools').innerHTML +=`<h2 class="pLan">Tools & Platforms</h2>`
+document.getElementById('tools').innerHTML +=`<h2 class="pLan">Dev Tools & Platforms</h2>`
 
 
 window.addEventListener('scroll', function(){  //works as intended but needs to be changed 

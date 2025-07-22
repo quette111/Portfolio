@@ -4,7 +4,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
   color: rgba(255, 255, 255, 0.993);
   /*font-family: 'MyCustomFont', arial, serif; */
   background-color: black;
@@ -13,8 +13,10 @@ html {
   font-family: "Space Mono", serif;
   font-weight: 400;
   font-style: normal;
+overflow-y: auto;
 
 }
+
 
 
 @keyframes slide {
@@ -26,9 +28,8 @@ html {
     transform: translateY(0%);
   }
 }
-/* Mobile first styles (for smaller screens) */
+
 @media (max-width: 768px) {
-  /* Adjust navigation for small screens */
   #navLinks {
     display: none;
     position: absolute;
@@ -47,7 +48,7 @@ html {
     display: block;
   }
 
-  /* Adjust elements in the skills section */
+
   #skillsArea {
     padding: 20px;
 
@@ -57,14 +58,16 @@ html {
     margin: 10px 0;
   }
 
-  /* Stacked Layout for Skills */
 
+#imgcontainer{
+    width: 25vh;
+}
 
   #languageDiv img,
   #frameworks img,
   #tools img {
-    width: 80%;
-    margin: 10px 0;
+    width: 60%;
+    margin: 10px 1px;
   }
 
   .arrowLeft,
@@ -77,14 +80,14 @@ html {
     padding: 15px;
   }
 
-  /* Mobile Adjustments to Education Section */
+
   #schoolsContainer {
     margin-top: 30px;
     margin-left: 0%;
   }
 }
 
-/* Larger screen support (For tablets, laptops, etc.) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Modify margins or paddings as necessary */
   #wrapper {
@@ -129,6 +132,7 @@ html {
   gap: 3rem;
   padding-right: 1.5%;
 }
+
 
 
 #topic {
@@ -180,14 +184,14 @@ position:relative;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-
-  height: 300px;
-  border-radius: 150px;
+ aspect-ratio: 1 / 1;
+  width: 40vh;
+  border-radius: 50%;
   border: 1px solid white;
 }
 
 video {
-  width: 80vw;    /* up to 80% of viewport width */
+  width: 80vw;   
   max-width: 400px;
   height: auto;
   border-radius: 50%;
@@ -198,7 +202,12 @@ video {
   margin-right: 5%;
 }
 #nameIntro {
+  border-right: .10em solid rgb(255, 255, 255);
+  
 
+    animation: 
+
+    blink-caret .75s step-end infinite;
   margin-top: 40vh;
   background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
   -webkit-background-clip: text;
@@ -271,45 +280,53 @@ margin-left: 5%;
   margin-bottom: -1%;
 }
 
-/* Media Queries for Responsive Design */
+
 @media (max-width: 768px) {
   #intro {
-    margin-left: 5%; /* Reduce margin for smaller screens */
-    font-size: 150%; /* Reduce font size for smaller screens */
-    flex-direction: column; /* Stack intro content vertically */
+    margin-left: 5%;
+    font-size: 150%;
+    flex-direction: column;
   }
 
   #nameIntro {
-    left: 0; /* Reset position for smaller screens */
-    margin-top: 10%; /* Adjust margin for smaller screens */
+    left: 0; 
+    margin-top: 10%;
+    font-size: 1.5rem;
+    width: 72vw;
+
   }
 
   #linkedLink {
-    left: 0; /* Reset position for smaller screens */
-    margin-bottom: 10%; /* Adjust margin for smaller screens */
+    left: 0; 
+    margin-bottom: 10%;
   }
 
   #description {
-    left: 5%; /* Adjust position for smaller screens */
-    top: 0; /* Reset position for smaller screens */
+    left: 5%;
+    top: 0;
   }
 
   #skillsHeader {
-    font-size: 40px; /* Reduce font size for smaller screens */
-    left: 5%; /* Adjust position for smaller screens */
+    font-size: 40px;
+    left: 5%;
   }
+  .imgJ{
+    
+ width: 3vw;
+ position: relative;
+ top: 36%;
+margin: 50px 0
 
-  video {
-    width: 100%; /* Make video responsive */
-    height: auto; /* Maintain aspect ratio */
   }
+  .pLan{margin-bottom: 20vh;}
+
 }
 
 .pLan{
   position: absolute;
   top:0;
   text-align: center;
-
+margin-left: 5%;
 }
 
 
@@ -370,7 +387,7 @@ z-index: 30;
   transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
   animation: cube 2s linear;
 position: relative;
-  transform-origin: center; /* Ensure transformations are applied from the center */
+  transform-origin: center;
 }
 @keyframes cube {
   0% {
@@ -380,7 +397,7 @@ position: relative;
     transform: rotateX(360deg) rotateY(-45deg) rotateZ(45deg) scale(1);
   }
   100% {
-    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) scale(1); /* Land on bottom face */
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) scale(1);
   }
 }
 
@@ -539,6 +556,7 @@ position: relative;
 #foot {
   display: flex;
   flex-wrap: wrap;
+  height: 10vh;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5%;
@@ -621,6 +639,7 @@ position: relative;
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    height: 20vh;
   }
   .footer-top,
   .footer-actions,
@@ -630,6 +649,7 @@ position: relative;
   .footer-stats {
     flex-direction: column;
   }
+ 
 }
 
 
@@ -639,7 +659,7 @@ position: relative;
   border-radius: 10%;
   position: absolute;
   display: flex;
-  left: 12%;
+  left: 60%;
 }
 #butt {
   color: white;
@@ -725,6 +745,9 @@ position: relative;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.568), 0 0 30px #ffffff88, 0 0 40px #2b87ff8c, 0 0 50px #2b87ff8c, 0 0 60px #2b87ff8c, 0 0 70px #2b87ff8c, 0 0 80px #2b87ff8c;
   }
 }
+#foot{
+  flex-direction: column;
+}
 #foot img{
   cursor: pointer;
 }
@@ -781,6 +804,9 @@ padding-left: 5%;
     display: block;
    margin-left: 1200%;
   }
+  #foot button{
+  display: block;
+}
   
 }
 
@@ -936,7 +962,7 @@ text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2%;           /* space between panels */
+  gap: 2%;         
   padding: 5% 2%;
   animation: smoothAppearance 1s ease-out forwards;
 }
@@ -945,8 +971,8 @@ text-decoration: none;
 #languageDiv,
 #frameworks,
 #tools {
-  position: relative;       /* for arrow positioning */
-  flex: 1 1 30%;            /* grow/shrink, base width ~30% */
+  position: relative;      
+  flex: 1 1 30%;          
   min-width: 240px;     
   background: rgba(180,180,180,0.32);
   border-radius: 16px;
@@ -962,7 +988,7 @@ text-decoration: none;
   transition: filter 0.3s;
    display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2%;           /* space between panels */
+  gap: 2%;         
   padding: 5% 2%;
 }
 #languageDiv:hover,
@@ -971,7 +997,7 @@ text-decoration: none;
   filter: brightness(1.2);
 }
 
-/* 3) Header styling stays the same */
+
 #skillsArea h2.pLan {
   font-size: 30px;
   background: -webkit-linear-gradient(#eee, #37a3eb);
@@ -981,7 +1007,7 @@ text-decoration: none;
   text-align: center;
 }
 
-/* 4) Arrows positioned inside each panel */
+
 #languageDiv  .arrowRight,
 #frameworks    .arrowRight,
 #tools         .arrowRight {
@@ -1001,13 +1027,13 @@ text-decoration: none;
   cursor: pointer;
 }
 
-/* 5) Center the figure content */
+
 #skillsArea figure {
   margin: 1rem 0 0;
   text-align: center;
 }
 #skillsArea figure img {
-  width: 60px;         /* or auto with max-height */
+  width: 60px;
   height: auto;
   filter: drop-shadow(0 0 0.5rem #0099ff);
 }
@@ -1016,11 +1042,12 @@ text-decoration: none;
   font-size: 1rem;
 }
 
-/* 6) Responsive breakpoint: stack panels vertically */
+
 @media (max-width: 800px) {
   #skillsArea {
     flex-direction: column;
     gap: 1.5rem;
+    margin-left: 10%;
   }
   #languageDiv,
   #frameworks,
@@ -1028,6 +1055,8 @@ text-decoration: none;
     flex: 1 1 auto;
     width: 100%;
     min-width: auto;
+    height: 24vh;
+
   }
   #scroll-container {
     flex-direction: column;
@@ -1043,14 +1072,36 @@ text-decoration: none;
 
 .myName{
   border-right: .10em solid rgb(255, 255, 255);
+
+  width: 100%;
     animation: 
 
     blink-caret .75s step-end infinite;
 }
 
 
-/* The typewriter cursor effect */
+
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(255, 255, 255); }
+}
+
+#languageDiv > :nth-child(4) {
+    filter: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  border: none;
+  background-color: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  all: unset; 
+  text-decoration: none; 
+  color: inherit;  
+  cursor: pointer;     
 }
