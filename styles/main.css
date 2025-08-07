@@ -371,7 +371,7 @@ figcaption {
 
 .cube-wrap {
   transform: rotateX(180deg);
-  --size: 15vmin;
+  --size: 7vmin;
 margin-left: 40vw;
 position: absolute;
   top: 40vh;
@@ -1104,4 +1104,31 @@ a:focus {
   text-decoration: none; 
   color: inherit;  
   cursor: pointer;     
+}
+
+.glow {
+  -webkit-animation: glowAnim 0.25s alternate infinite;
+  animation: glowAnim 0.25s alternate infinite;
+}
+
+@-webkit-keyframes glowAnim {
+  0% {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+  }
+  100% {
+    -webkit-filter: brightness(2);
+    filter: brightness(2);
+  }
+}
+
+@keyframes glowAnim {
+  0% {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+  }
+  100% {
+    -webkit-filter: brightness(2);
+    filter: brightness(2);
+  }
 }

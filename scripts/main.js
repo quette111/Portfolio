@@ -23,6 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
             console.log("Loop finished");
             document.getElementById("progress").classList.add("hide"); 
             document.getElementById("wrapper").style.display = "block"; 
+             document.querySelector('.cube-wrap').style.display="none";
             console.log("Loading hidden, wrapper displayed");
           }, remainingTime);
         } else {
@@ -54,15 +55,17 @@ function scrollToSkills(){
     });
 }
 
-function scrollToEducation(){
+
+function scrollToProjects(){
     window.scroll({
-        top: 8000,
+        top: 1500,
         behavior: 'smooth',
     });
 }
-function scrollToProjects(){
+
+function scrollToFooter(){
     window.scroll({
-        top: 6400,
+        top: 9000,
         behavior: 'smooth',
     });
 }
@@ -415,6 +418,88 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
             //document.getElementsByClassName('.cube-wrap').style.cssText = "animation-name: fadeOut;animation-duration: 3s;"
         document.querySelector('.cube-wrap').style.display="none";
     })
+
+
+function scrollToEducation() {
+  document
+    .getElementById('educationArea')
+    .scrollIntoView({ behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM ready');
+  const btn = document.querySelector('.educationButton');
+  console.log('Found button:', btn);
+  btn.addEventListener('click', () => {
+    console.log('Button clicked');
+    scrollToEducation();
+  });
+});
+
+
+function scrollToSkills() {
+  document
+    .getElementById('skillsHeader')
+    .scrollIntoView({ behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM ready');
+  const btn = document.querySelector('.skillsButton');
+  console.log('Found button:', btn);
+  btn.addEventListener('click', () => {
+ 
+    scrollToSkills();
+  });
+});
+
+function scrollToProjects() {
+  document
+    .querySelector('.projectArea')
+    .scrollIntoView({ behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM ready');
+  const btn = document.querySelector('.projectsButton');
+  console.log('Found button:', btn);
+  btn.addEventListener('click', () => {
+ 
+    scrollToProjects();
+  });
+});
+
+function scrollToFooter() {
+  document
+    .getElementById('foot')
+    .scrollIntoView({ behavior: 'smooth' });
+}
+
+function removeGlow(){
+    document.querySelectorAll('.img').forEach(img => {
+  img.classList.remove('glow');
+});
+}
+function emphasizeContactInfo() {
+
+document.querySelectorAll('.img').forEach(img => {
+  img.classList.add('glow');
+});
+
+setTimeout(removeGlow, 4000)
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM ready');
+  const btn = document.querySelector('.footerButton');
+  console.log('Found button:', btn);
+  btn.addEventListener('click', () => {
+ 
+    scrollToFooter();
+    emphasizeContactInfo()
+  });
+});
 
 
 
