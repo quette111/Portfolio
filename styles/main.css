@@ -60,7 +60,8 @@ overflow-y: auto;
 
 
 #imgcontainer{
-    width: 25vh;
+ 
+    width: 1vw;
 }
 
   #languageDiv img,
@@ -235,6 +236,9 @@ video {
   border-radius: 50%;
 }
 
+#cubeSS{
+margin-top: 0%;
+}
 
 #description {
   /*
@@ -272,11 +276,11 @@ margin-left: 5%;
   left: 20%;
   */
 }
-#skillsHeader {
+.skillsHeader {
   padding-left: 5%;
   position: relative;
   padding-top: 8%;
-  font-size: 65px;
+  font-size: 55px;
   margin-bottom: -1%;
 }
 
@@ -306,7 +310,7 @@ margin-left: 5%;
     top: 0;
   }
 
-  #skillsHeader {
+  .skillsHeader {
     font-size: 40px;
     left: 5%;
   }
@@ -625,6 +629,7 @@ position: relative;
   display: flex;
   flex: 1 1 200px;
   justify-content: flex-end;
+  align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
 }
@@ -640,6 +645,7 @@ position: relative;
     text-align: center;
     gap: 1.5rem;
     height: 20vh;
+ margin-right: 0;
   }
   .footer-top,
   .footer-actions,
@@ -648,6 +654,10 @@ position: relative;
   }
   .footer-stats {
     flex-direction: column;
+        display: none;
+  }
+  .footer-actions{
+    display: none;
   }
  
 }
@@ -659,7 +669,7 @@ position: relative;
   border-radius: 10%;
   position: absolute;
   display: flex;
-  left: 60%;
+  left: 63%;
 }
 #butt {
   color: white;
@@ -671,12 +681,10 @@ position: relative;
  
 }
 
-#countLikes {
-  text-align: right;
-  display: flex;
-  flex-direction: row;
-  margin-left: 50%;
- 
+
+
+#likedPage{
+display: flex;
 }
 
 #projectCard{
@@ -1106,29 +1114,18 @@ a:focus {
   cursor: pointer;     
 }
 
+
+
 .glow {
-  -webkit-animation: glowAnim 0.25s alternate infinite;
-  animation: glowAnim 0.25s alternate infinite;
+  animation: glowPulse 0.75s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glowAnim {
-  0% {
-    -webkit-filter: brightness(1);
-    filter: brightness(1);
+@keyframes glowPulse {
+  from {
+    filter: drop-shadow(0 0 0px #4B9CD3);
   }
-  100% {
-    -webkit-filter: brightness(2);
-    filter: brightness(2);
+  to {
+    filter: drop-shadow(0 0 10px #4B9CD3);
   }
 }
 
-@keyframes glowAnim {
-  0% {
-    -webkit-filter: brightness(1);
-    filter: brightness(1);
-  }
-  100% {
-    -webkit-filter: brightness(2);
-    filter: brightness(2);
-  }
-}

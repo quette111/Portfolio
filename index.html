@@ -39,7 +39,9 @@
                     <h1 id="squig">{</h1>
                     <h3>Marquette <br> Hanson</h3>
                     <h1 id="squig">}</h1>
+                    
                 </div>
+                <img id="cubeSS" height="150px" src="./assets/images/cubeSS.png">
                 <div id="sideBar">
                     <h1 onclick="exitMenu()" id="exitSidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></h1>
                     <h1>Skills/Experience</h1>
@@ -70,7 +72,7 @@
              <h4>I am a <span id="description"> </span> from North Carolina that enjoys bringing ideas to life on the web</h4>  
             
             </div>
-            <h1 id="skillsHeader">Skills</h1>
+            <h1 id='skillScroll' class="skillsHeader">Skills</h1>
         </div>
 
         <!-- Skills Area -->
@@ -114,7 +116,7 @@
                         <span id="str"></span>
                         <span id="str"></span>
                     </section>
-            <h1 class="projectArea" id="skillsHeader">Projects</h1>
+            <h1 class="projectArea skillsHeader" >Projects</h1>
          
             <div id='projectCard'>
   
@@ -124,7 +126,7 @@
         </div>
         <!-- Education Area -->
         <div id="educationArea">
-            <h1 id="skillsHeader">Education</h1>
+            <h1 class="skillsHeader">Education</h1>
            <!-- <div id="educationGifContainer">
              <img id="educationGif"  height="400"> 
             </div>-->
@@ -173,7 +175,7 @@
 
         <!-- Open Source Area -->
         <div>
-            <h1 id="skillsHeader"></h1>
+            <h1 class="skillsHeader"></h1>
 <div id="openSource">
     <h2></h2>
 </div>
@@ -184,9 +186,11 @@
   <div class="footer-top">
     <div class="footer-brand">
       <h1>Marquette Hanson</h1>
-      <p>JavaScript Developer| Durham, NC</p>
+      <p>Web Developer | Durham, NC</p>
     </div>
-    <div class="footer-links">
+
+
+    <div id="footerBox" class="footer-links">
       <a href="https://www.linkedin.com/in/marquettehanson/" target="_blank" aria-label="LinkedIn">
         <img class="img" src="assets/images/link.png" alt="LinkedIn icon">
       </a>

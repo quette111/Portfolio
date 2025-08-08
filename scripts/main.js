@@ -395,8 +395,7 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
         if(window.scrollY > 1450) {
             e.preventDefault()
             document.getElementById('projectCard').style.cssText = "animation-name: slide;animation-duration: 3s;"
-              document.getElementsByClassName('.cube').style.display="none";
-    
+            
     }})
 
     
@@ -439,7 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function scrollToSkills() {
   document
-    .getElementById('skillsHeader')
+    .getElementById('skillScroll')
     .scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -476,12 +475,13 @@ function scrollToFooter() {
 }
 
 function removeGlow(){
+    console.log('working in rem')
     document.querySelectorAll('.img').forEach(img => {
   img.classList.remove('glow');
 });
 }
 function emphasizeContactInfo() {
-
+console.log('working in emph')
 document.querySelectorAll('.img').forEach(img => {
   img.classList.add('glow');
 });
