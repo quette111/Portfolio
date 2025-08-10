@@ -7,17 +7,16 @@
     <title>Marquette Hanson - Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="/assets/images/icon.png" type="image/png" />
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Badeen+Display&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Fjalla+One&family=Fleur+De+Leah&family=Ga+Maamli&family=Itim&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Sedgwick+Ave&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
 </head>
 <body>
-    <!-- Progress Indicator -->
+ 
     <div id="progress"></div>
 
-    <!-- 3D Cube -->
+
     <div class="cube-wrap">
         <div class="cube">
             <div class="side top"></div>
@@ -29,11 +28,11 @@
         </div>
     </div>
 
-    <!-- Main Wrapper -->
+
     <div id="wrapper">
-        <!-- Landing Area -->
+
         <div id="landingArea">
-            <!-- Header -->
+ 
             <div id="header">
                 <div id="cornerLogo">
                     <h1 id="squig">{</h1>
@@ -41,31 +40,24 @@
                     <h1 id="squig">}</h1>
                     
                 </div>
-                <img id="cubeSS" height="150px" src="./assets/images/cubeSS.png">
-                <div id="sideBar">
-                    <h1 onclick="exitMenu()" id="exitSidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></h1>
-                    <h1>Skills/Experience</h1>
-                    <h1 id="topic">Education</h1>
-                    <h1 onclick="scrollToProjects()" id="topic">Projects</h1>
-                    <h1 id="topic">Open Source</h1>
-                    <h1 id="topic">Contact Me</h1>
-                </div>
+                
+                
                 <div id="headerTags">
                     <h1 class='hideOnMobile skillsButton' id="topic">Skills</h1>
-                    <h1 class='hideOnMobile educationButton' id="topic">Education</h1>
                     <h1 class='hideOnMobile projectsButton' id="topic">Projects</h1>
+                    <h1 class='hideOnMobile educationButton' id="topic">Education</h1>
                     <h1 class='hideOnMobile'  id="topic"></h1>
                     <h1 class='hideOnMobile footerButton'  id="topic">Contact Me</h1>
-                    <h1  id="menuButton" onclick="displayMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></h1>
+                    <h1  id="menuButton"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></h1>
                 </div>
             </div>
 
-            <!-- Introduction -->
+       
             <div id="intro">
                <h1 id="greeting">Hello!<br><span id="iAm"></span></h1>
                 <h1 id="nameIntro" class="myName">I am Marquette Hanson</h1>
             
-                    <img id="imgcontainer" src="/assets/images/headshot.jpeg">
+                    <img  loading="lazy" id="imgcontainer" alt="Hanson Headshot" src="/assets/images/headshot.jpeg">
        
             </div>
             <div id='descriptionWrap'>
@@ -75,7 +67,7 @@
             <h1 id='skillScroll' class="skillsHeader">Skills</h1>
         </div>
 
-        <!-- Skills Area -->
+
         <div id="skillsArea">
        
             <div id='languageDiv'>
@@ -102,19 +94,13 @@
 
 
 
-         <!-- Projects Area -->
+
         <div>
                 <section id="star">
                         <span id="str"></span>
+                       
                         <span id="str"></span>
-                        <span id="str"></span>
-                        <span id="str"></span>
-                        <span id="str"></span>
-                        <span id="str"></span>
-                        <span id="str"></span>
-                        <span id="str"></span>
-                        <span id="str"></span>
-                        <span id="str"></span>
+                     
                     </section>
             <h1 class="projectArea skillsHeader" >Projects</h1>
          
@@ -124,7 +110,7 @@
 
             </div>   
         </div>
-        <!-- Education Area -->
+
         <div id="educationArea">
             <h1 class="skillsHeader">Education</h1>
            <!-- <div id="educationGifContainer">
@@ -133,13 +119,13 @@
             <div id="schoolsContainer">
         
                   <div class="schoolItem">
-    <img class="schoolLogo" 
+    <img  loading="lazy"  alt="Code The Dream" class="schoolLogo" 
          src="assets/images/codeTheDreamLogo.png" 
          alt="Code The Dream logo">
     <div class="schoolContent">
       <h2 onclick="openCodeTheDream()">Code The Dream
         <a target="_blank" rel="noopener noreferrer">
-          <img class="openInNewWindow" src="assets/images/open.png">
+          <img  loading="lazy"  alt="Open Code The Dream" class="openInNewWindow" src="assets/images/open.png">
         </a>
       </h2>
       <div class="schoolInfo">
@@ -147,7 +133,7 @@
           Server Side Javascript Certificate Program
           <a target="_blank" rel="noopener noreferrer"
              href="https://drive.google.com/file/d/11KuItr0zqizvcdFMS9WUgn6Js06CgF1k/view?usp=sharing">
-            <img src="assets/images/open.png">
+            <img  loading="lazy" alt="Open Certificate" src="assets/images/open.png">
           </a>
         </h3>
         <h4>March 2025 – May 2025</h4>
@@ -157,7 +143,7 @@
   </div>
 
   <div class="schoolItem">
-    <img class="schoolLogo" 
+    <img  loading="lazy" class="schoolLogo" 
          src="assets/images/mizzouPortfolio.png" 
          alt="University of Missouri logo">
     <div class="schoolContent">
@@ -173,7 +159,7 @@
 
        
 
-        <!-- Open Source Area -->
+
         <div>
             <h1 class="skillsHeader"></h1>
 <div id="openSource">
@@ -192,22 +178,22 @@
 
     <div id="footerBox" class="footer-links">
       <a href="https://www.linkedin.com/in/marquettehanson/" target="_blank" aria-label="LinkedIn">
-        <img class="img" src="assets/images/link.png" alt="LinkedIn icon">
+        <img  loading="lazy" class="img" src="assets/images/link.png" alt="LinkedIn icon">
       </a>
       <a href="https://github.com/quette111" target="_blank" aria-label="GitHub">
-        <img class="img" src="assets/images/gitIcon.png" alt="GitHub icon">
+        <img  loading="lazy" class="img" src="assets/images/gitIcon.png" alt="GitHub icon">
       </a>
       <a href="mailto:marquette.hanson@gmail.com" aria-label="Email">
-        <img class="img" src="assets/images/email.png" alt="Email icon">
+        <img  loading="lazy" class="img" src="assets/images/email.png" alt="Email icon">
       </a>
       <a href="https://www.instagram.com/quettehanson" target="_blank" aria-label="Instagram">
-        <img class="img" src="assets/images/insta.png" alt="Instagram icon">
+        <img  loading="lazy" class="img" src="assets/images/insta.png" alt="Instagram icon">
       </a>
     </div>
   </div>
 
   <div class="footer-actions">
-    <a href="https://docs.google.com/document/d/12wzBHE1Ltk5HY2beLO_da63NjdWQc0w5/edit?usp=sharing&ouid=109911898780886575669&rtpof=true&sd=true" target="_blank" aria-label="Resume"><button id="resumeBtn">Resume</button></a>
+    <a href="./assets/resume.pdf" target="_blank" aria-label="Resume"><button id="resumeBtn">Resume</button></a>
     <button id="like" onclick="addLike()">👍 Like</button>
   </div>
 

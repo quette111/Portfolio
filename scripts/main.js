@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('img').forEach(img => {
+    img.setAttribute('loading', 'lazy');
+  });
+});
+
+
+
 window.addEventListener("DOMContentLoaded", function () {
     const startTime = Date.now(); 
     const minLoadingTime = 2000; 
@@ -141,26 +149,9 @@ document.getElementById('tools').innerHTML = toolArray.map((entry) =>
 document.getElementById('tools').innerHTML +=`<h2 class="pLan">Dev Tools & Platforms</h2>`
 
 
-window.addEventListener('scroll', function(){  //works as intended but needs to be changed 
-    if(window.scrollY > 300) {
-        skillsArea.style.cssText = "animation-name: slide;animation-duration: 2s;"
-
-}else if(window.scrollY < 300){
-    window.addEventListener('scroll', function(){
-        if(window.scrollY > 300) {
-            skillsArea.style.cssText = "animation-name: slide;animation-duration: 2s;"
-        }else{}
-    }) 
-}
-})
 
 
 
-const schoolsContainer = document.getElementById('schoolsContainer')
-window.addEventListener('scroll', function(){
-    if(window.scrollY > 500) {
-        schoolsContainer.style.animation = 'smoothAppearance 1s ease-out forwards';
-}})
 
 
 let i = 0; // Declare i globally so it retains its value
@@ -337,7 +328,7 @@ document.getElementById('likedPage').innerHTML =  localStorage.clickCount
 let projects = [
     
     {
-        "Project": "Job Log",
+        "Project": "jobLog",
         "url": "https://job-log.onrender.com/",
         "Image1": "assets/images/jlLanding.png",
         "Image2": "assets/images/jobLog11.png",
@@ -348,6 +339,7 @@ let projects = [
         "Image7": "assets/images/express.png",
         "Image8": "assets/images/mongo.png",
         "Image9": "assets/images/webpack.png",
+        "Description":"jobLog is a job tracker with Chart.js visualizations and AI-powered resume tips to boost your job search"
     },{
         "Project": "Astro Dodge",
         "url": "",
@@ -359,11 +351,10 @@ let projects = [
         "Image6": "assets/images/js.png",
         "Image7": "assets/images/block.png",
         "Image8": "assets/images/block.png",
-        "Image9": "assets/images/block.png"
-
+        "Image9": "assets/images/block.png",
+        "Description":"Interactive point based game vs CPU currently in development"
     }  
 ]
-
 
 
 
@@ -371,7 +362,7 @@ let projects = [
 document.getElementById('projectCard').innerHTML = projects.map((item) => 
 
   ` <h2 id="projectName">${item.Project}<a target="_blank" rel="noopener noreferrer" href='${item.url}'><img class='openInNewWindow' src='assets/images/open.png'></img></a></h2>
-
+ <h2 class='projectDescription'>${item.Description}</h2>
 <div id="scroll-container">
 
     <img id='projPhoto' src="${item.Image1}"> 
@@ -386,27 +377,17 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
         <img id='techPhoto' src="${item.Image7}">
         <img id='techPhoto' src="${item.Image8}">
         <img id='techPhoto' src="${item.Image9}">
-    </div>`).join("");
-
-
-
-
-    window.addEventListener('scroll', function(e){  
-        if(window.scrollY > 1450) {
-            e.preventDefault()
-            document.getElementById('projectCard').style.cssText = "animation-name: slide;animation-duration: 3s;"
-            
-    }})
+        
+    </div>
+   
 
     
+    `).join("");
 
-    window.addEventListener('scroll', function(e){  
-        if(window.scrollY > 500) {
-            e.preventDefault()
-            console.log('hello')
-            document.getElementById('schoolsContainer').style.cssText = "animation-name: slide;animation-duration: 3s;"
-    
-    }})
+
+
+
+
 
 
   
