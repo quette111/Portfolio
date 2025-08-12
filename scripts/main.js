@@ -148,7 +148,7 @@ let projects = [
         "url": "https://job-log.onrender.com/",
         "Image1": "assets/images/jlLanding.png",
         "Image2": "assets/images/jobLog11.png",
-        "Image3": "assets/images/jobLog22.png",
+        "Image3": "assets/images/joblog22.png",
         "Image4": "assets/images/htmll.png",
         "Image5": "assets/images/css.png",
         "Image6": "assets/images/js.png",
