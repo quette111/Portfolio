@@ -104,16 +104,10 @@ overflow-y: auto;
     width: 60%;
   }
 
-  .arrowLeft,
-  .arrowRight {
-    display: block;
-  }
 }
 
 
-.arrowLeft, .arrowRight{
-  cursor: pointer;
-}
+
 #landingArea {
   background: rgb(193, 193, 193);
   background: radial-gradient(
@@ -132,12 +126,12 @@ overflow-y: auto;
 }
 
 
-
-#topic {
+.hideOnMobile{
   cursor: pointer;
 }
 
-#topic:hover {
+
+.hideOnMobile:hover {
   background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -650,21 +644,24 @@ position: relative;
   justify-content: center;
   gap: 1rem;
   margin: 1rem 0;
+
 }
 
 .footer-actions button {
   padding: 0.6rem 1rem;
-  font-size: 1rem;
-  color: #fff;
-  background: gray;
-  border: none;
+  height: 7vh;
+  font-size: 1.7rem;
+  width: 15vw;  
+  color: white;
+  border: 1px solid white;
+  background: rgb(55, 163, 235);
   border-radius: 0.5rem;
-  cursor: pointer;
+
   transition: background 0.2s;
 }
 
 .footer-actions button:hover {
-  background: #555;
+  background: rgb(40, 122, 177);
 }
 
 .footer-stats {
@@ -680,7 +677,12 @@ position: relative;
   font-weight: bold;
 }
 
-/* Mobile stack */
+
+button{
+  cursor: pointer;
+}
+
+
 @media (max-width: 600px) {
   #foot {
     flex-direction: column;
@@ -737,7 +739,7 @@ display: flex;
   margin-left: 1%;
 }
 
-#projPhoto{
+.projPhoto{
  width: 90vw;
   max-width: 420px;
   height: auto;
@@ -799,7 +801,7 @@ margin-left: 1.5%;
  font-size: 100%;
  margin-left: 5%;
 }
-#projectName{
+.projectName{
   font-size:40px;
  -webkit-animation: glow 1s ease-in-out infinite alternate;
  -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -1123,7 +1125,7 @@ text-align: center;
     margin-left: 4%;
 
   }
-  #projPhoto{
+  .projPhoto{
     width: 85vw;
    height: 90%;
   }
