@@ -18,6 +18,14 @@ overflow-y: auto;
 }
 
 
+html, body {
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+
+
+
 
 @keyframes slide {
   from {
