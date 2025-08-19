@@ -326,7 +326,7 @@ margin-left: 5%;
   #nameIntro {
     left: -5%; 
     margin-top: 10%;
-    font-size:95%;
+    font-size:120%;
     width: 62vw;
   }
 
@@ -356,6 +356,7 @@ margin: 50px 0
 
   #skillsArea div{
 height:300px;
+
 }
 
 }
@@ -586,7 +587,9 @@ position: relative;
     gap: 1rem;
   }
   .schoolContent h2 {
-    font-size: 1.5rem;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-size: 1.3rem;
   }
 
   #educationArea {
@@ -599,6 +602,10 @@ position: relative;
     rgba(0,0,0,1) 25%
   );
 
+}
+
+.cube-wrap{
+  --size: 10vmin;
 }
 }
 
