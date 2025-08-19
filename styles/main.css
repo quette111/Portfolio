@@ -169,7 +169,7 @@ position:relative;
 #intro {
   font-size: 200%;
   text-align: center;
- 
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -183,20 +183,20 @@ position:relative;
   align-items: center;
   margin-top: 20px;
 
-  /* Main size for desktop */
-  width: 70vh;
-  height: 40vh;
+
+  width: 70%;
+  height: 40%;
 
   border-radius: 50%;
   border: 1px solid white;
-  overflow: hidden; /* prevents image overflow */
+  overflow: hidden; 
 }
 
 /* On tablets */
 @media (max-width: 768px) {
   #imgcontainer {
-    width: 30vh;
-    height: 30vh;
+    width: 30%;
+    height: 30%;
   }
 
   #landingArea {
@@ -212,12 +212,13 @@ position:relative;
 
 }
 
-/* On small phones */
+
 @media (max-width: 480px) {
   #imgcontainer {
-    width: 25vh;
-    height: 25vh;
+    width: 35%;
+    height: 35%;
   }
+
 }
 
 
@@ -234,18 +235,18 @@ video {
 }
 #nameIntro {
   border-right: .10em solid rgb(255, 255, 255);
-  
+
 
     animation: 
 
     blink-caret .75s step-end infinite;
-  margin-top: 40vh;
+  margin-top: 22%;
   background: -webkit-linear-gradient(#eee, rgb(55, 163, 235));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap; 
   position: relative;
-  left: -17vw;
+
 }
 
 #linkedLink {
@@ -323,11 +324,10 @@ margin-left: 5%;
   }
 
   #nameIntro {
-    left: 0; 
+    left: -5%; 
     margin-top: 10%;
-    font-size: 1.5rem;
-    width: 72vw;
-
+    font-size:95%;
+    width: 62vw;
   }
 
   #linkedLink {
@@ -352,7 +352,11 @@ margin-left: 5%;
 margin: 50px 0
 
   }
-  .pLan{margin-bottom: 20vh;}
+  .pLan{margin-bottom: 20%;}
+
+  #skillsArea div{
+height:300px;
+}
 
 }
 
@@ -363,9 +367,7 @@ margin: 50px 0
 margin-left: 5%;
 }
 
-#skillsArea div{
-height: 27vh;
-}
+
 
 .imgJ{
   margin-top: 20%;
@@ -410,7 +412,7 @@ figcaption {
   --size: 7vmin;
 margin-left: 40vw;
 position: absolute;
-  top: 40vh;
+  top: 40%;
 z-index: 30;
   width: 0;
     
@@ -507,7 +509,7 @@ position: relative;
     rgba(50,50,50,1) 17%,
     rgba(0,0,0,1) 25%
   );
-  height: 90vh;
+
 }
 
 
@@ -907,9 +909,8 @@ padding-left: 5%;
 #star{
   z-index: -1;
   width: 100%;
-  height: 5vh;
-  /* https://lh3.googleusercontent.com/ka_5IYJDRkXZnbptxq64LPuggGL5FM8gnpJlsuSiOQh4b39kMkiRbVfX8iK8bjMg5SLkdfoix09P60wyFjN2=w681-h614 */
-/*   background-color:black; */
+
+
   background-size: cover;
 
   animation: animateBg 50s linear infinite;
@@ -1032,6 +1033,7 @@ text-decoration: none;
 } 
 
 #greeting{
+
   text-align: center;
   margin-left: 4%;
 }
@@ -1124,7 +1126,7 @@ text-align: center;
     flex: 1 1 auto;
     width: 100%;
     min-width: auto;
-    height: 24vh;
+    height: 24%;
 
   }
   #scroll-container {

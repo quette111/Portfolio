@@ -247,7 +247,7 @@ function scrollToResume() {
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM ready');
-  const btn = document.querySelector('.resumeButton');
+  const btn = document.querySelector('.footer-actions');
   console.log('Found button:', btn);
   btn.addEventListener('click', () => {
     
@@ -255,6 +255,27 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.classList.add('glow')
   });
 });
+
+
+function scrollToRes() {
+  document
+    .getElementById('foot')
+    .scrollIntoView({ behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM ready');
+  const btn = document.querySelector('.resumeButton');
+  console.log('Found button:', btn);
+  btn.addEventListener('click', () => {
+
+    scrollToRes();
+    document.querySelector('.footer-actions').classList.add('glow')
+  });
+});
+
+
+
 
 
 function scrollToSkills() {
