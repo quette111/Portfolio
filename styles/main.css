@@ -609,6 +609,20 @@ position: relative;
 }
 }
 
+.githubImg{
+position: absolute;
+left: 58%;
+margin-top: 1.4%;
+height: 30px;
+}
+
+@media (max-width: 600px){
+  .githubImg{
+   
+    left: 78%;
+    margin-top: 5%;
+    }
+}
 
 #foot {
   display: flex;

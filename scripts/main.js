@@ -345,8 +345,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+const linkElement = document.createElement('a');
+linkElement.setAttribute('target', '_blank');
+linkElement.setAttribute('href', 'https://github.com/quette111/Job_Log');
+let githubImg = document.createElement('img');
+githubImg.src = 'assets/images/gitIcon.png';
+githubImg.alt = 'Github Icon';
+githubImg.classList.add('githubImg');
 
-
+linkElement.append(githubImg);
+document.querySelector('.projectName').append(linkElement);
 
 
 
