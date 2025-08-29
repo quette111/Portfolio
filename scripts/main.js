@@ -59,6 +59,7 @@ const techArray = [
 const frameArray = [
     {name: 'Express', image: 'assets/images/express2.png'},
     {name: 'Node.js', image: 'assets/images/node2.png'},
+  { name: 'React.js', image: 'assets/images/react.png' },
     {name: 'Mongoose', image: 'assets/images/mongo.png'},
     {name: 'Chart.js', image: 'assets/images/chart.svg'},
 ];
@@ -156,7 +157,21 @@ let projects = [
         "Image8": "assets/images/mongo.png",
         "Image9": "assets/images/webpack.png",
         "Description":"jobLog is a job tracker with Chart.js visualizations and AI-powered resume tips to boost your job search"
-    },{
+  }, {
+    "Project": "KickBack",
+    "url": "",
+    "Image1": "assets/images/kb1.png",
+    "Image2": "assets/images/kb2.png",
+    "Image3": "assets/images/kb3.png",
+    "Image4": "assets/images/htmll.png",
+    "Image5": "assets/images/css.png",
+    "Image6": "assets/images/js.png",
+    "Image7": "assets/images/react.png",
+    "Image8": "assets/images/express.png",
+    "Image9": "assets/images/mongo.png",
+    "Description": "Interactive e-commerce platform for lightly used shoes with cart, checkout, and admin privileges for adding products (in progress)"
+  },
+    {
         "Project": "Astro Dodge",
         "url": "",
         "Image1": "assets/images/astro1.png",
@@ -168,7 +183,7 @@ let projects = [
         "Image7": "assets/images/block.png",
         "Image8": "assets/images/block.png",
         "Image9": "assets/images/block.png",
-        "Description":"Interactive point based game vs CPU currently in development"
+        "Description":"Interactive point based game vs CPU"
     },{
         "Project": "Christiansen & Associates LLC",
         "url": "https://christiansenandassociates.com/",
@@ -357,4 +372,13 @@ linkElement.append(githubImg);
 document.querySelector('.projectName').append(linkElement);
 
 
+
+const projectNames = document.querySelectorAll('.projectName');
+
+if (projectNames.length > 1) {
+  const second = projectNames[1];
+  const cloned = linkElement.cloneNode(true); 
+  cloned.setAttribute('href', 'https://github.com/quette111/KickBack');
+  second.appendChild(cloned);
+}
 
