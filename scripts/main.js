@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('img').forEach(img => {
     img.setAttribute('loading', 'lazy');
   });
+
+  document.getElementById('resumeBtn').addEventListener('click', ()=> {
+    alert('My apologies, my resume is currently unavailable while I make a few revisions! :-)')
+  })
 });
 
 
