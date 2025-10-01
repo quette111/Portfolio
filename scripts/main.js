@@ -175,6 +175,20 @@ let projects = [
     "Image9": "assets/images/mongo.png",
     "Description": "Interactive e-commerce platform for lightly used shoes with cart, checkout, and admin privileges for adding products (in progress)"
   },
+  {
+    "Project": "MycelFlow",
+    "url": "https://github.com/Code-the-Dream-School/jj-practicum-team-5-frontmy",
+    "Image1": "assets/images/my1.png",
+    "Image2": "assets/images/my2.png",
+    "Image3": "assets/images/my3.png",
+    "Image4": "assets/images/htmll.png",
+    "Image5": "assets/images/css.png",
+    "Image6": "assets/images/js.png",
+    "Image7": "assets/images/react.png",
+    "Image8": "assets/images/express.png",
+    "Image9": "assets/images/mongo.png",
+    "Description": "Event management system with task tracking, team collaboration, and progress monitoring. I was apart of a team of 4 developers to create this application. We utilized Agile methodology, sprints, and jira to complete this project over a 10 week period."
+  },
     {
         "Project": "Astro Dodge",
         "url": "",
