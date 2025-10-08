@@ -166,7 +166,7 @@ let projects = [
     "url": "",
     "Image1": "assets/images/kb1.png",
     "Image2": "assets/images/kb3.png",
-    "Image3": "assets/images/kbb.png",
+    "Image3": "assets/images/kbu.png",
     "Image4": "assets/images/htmll.png",
     "Image5": "assets/images/css.png",
     "Image6": "assets/images/js.png",
