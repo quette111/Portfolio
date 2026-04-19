@@ -111,7 +111,7 @@ document.getElementById('frameworks').innerHTML +=` <h2 class="pLan">Tools & Tec
 
 
 let i = 0; 
-const selfAdjectives = ['digital operations specialist', 'technical problem solver','tech enthusiast']
+const selfAdjectives = ['Digital Marketing & Operations Specialist', 'technical problem solver', 'creative systems thinker']
 const description = document.getElementById('description');
 
 function changeDescription(){
@@ -134,6 +134,9 @@ let projects = [
     {
     "Project": "jobLog - AI-Powered Application Tracker",
         "url": "https://job-log.onrender.com/",
+    "tc":'Technical Considerations: ',
+    "cons": 'Semantic HTML structure, meta tags, and keyword-focused page organization to support basic SEO.',
+    "conss": 'Integrated MailerLite API for email capture and automated onboarding workflows.',
         "Image1": "assets/images/jlLanding.png",
         "Image2": "assets/images/jobLog11.png",
         "Image3": "assets/images/joblog22.png",
@@ -144,14 +147,17 @@ let projects = [
         "Image8": "assets/images/mongo.png",
         "Image9": "assets/images/webpack.png",
     "Challenge": "The Challenge:",
-    "ExChal": "Managing multiple job applications can quickly become disorganized, making it difficult to track progress, stay consistent, and identify next steps",
+    "ExChal": "Managing multiple job applications can quickly become disorganized, making it difficult to track progress, stay consistent, and identify next steps.",
     "Approach": "Approach:",
-    "ExApp": "Designed a system to track application status, habits, and key actions. Integrated AI- driven suggestions to support decision - making Structured the interface to prioritize clarity and ease of use",
+    "ExApp": "Designed a system to track application status, habits, and key actions. Integrated AI-driven suggestions to support decision-making and structured the interface for clarity and ease of use. Implemented email signup functionality with MailerLite to automate user onboarding and segment users into a subscriber group for follow - up messaging.",
     "Outcome": "Outcome",
-    "ExOut":"Created a more structured and user - friendly workflow Reduced friction in managing multiple applications Improved overall visibility into the job search process",
+    "ExOut": "Created a more structured and user-friendly workflow. Reduced friction in managing multiple applications. Improved visibility into the job search process. Enabled automated user onboarding through email capture and lifecycle messaging.",
   }, {
     "Project": "KickBack — Interactive Ecommerce Sneaker Platform",
     "url": "",
+    "tc": '',
+    "cons": ' ',
+    "conss": '',
     "Image1": "assets/images/kb1.png",
     "Image2": "assets/images/kb3.png",
     "Image3": "assets/images/kbu.png",
@@ -162,15 +168,18 @@ let projects = [
     "Image8": "assets/images/express.png",
     "Image9": "assets/images/mongo.png",
     "Challenge": "The Challenge:",
-    "ExChal": "Online resale sneaker platforms often lack a smooth and intuitive experience for browsing, purchasing, and managing product listings",
+    "ExChal": "Online resale sneaker platforms often lack a smooth and intuitive experience for browsing, purchasing, and managing product listings.",
     "Approach": "Approach:",
-    "ExApp": "Designed and developed an ecommerce platform for lightly used shoes featuring product listings, shopping cart functionality, and checkout flow. Implemented admin capabilities for adding and managing products. Focused on creating a clear and intuitive user journey from browsing to purchase",
+    "ExApp": "Designed and developed an ecommerce platform for lightly used shoes featuring product listings, shopping cart functionality, and checkout flow. Implemented admin capabilities for adding and managing products. Focused on creating a clear and intuitive user journey from browsing to purchase.",
     "Outcome": "Outcome",
-    "ExOut": "Built a functional ecommerce experience supporting product browsing, cart management, and checkout processes. Improved understanding of user flow in online purchasing systems. Currently expanding features and refining admin product management tools"
+    "ExOut": "Built a functional ecommerce experience supporting product browsing, cart management, and checkout processes. Improved understanding of user flow in online purchasing systems. Currently expanding features and refining admin product management tools."
   },
   {
     "Project": "MycelFlow — Event Management & Team Workflow",
     "url": "https://github.com/Code-the-Dream-School/jj-practicum-team-5-frontmy",
+    "tc": '',
+    "cons": '',
+    "conss": '',
     "Image1": "assets/images/my1.png",
     "Image2": "assets/images/my2.png",
     "Image3": "assets/images/my3.png",
@@ -181,11 +190,11 @@ let projects = [
     "Image8": "assets/images/express.png",
     "Image9": "assets/images/mongo.png",
     "Challenge": "The Challenge:",
-    "ExChal": "Teams working on software projects often struggle with organizing tasks, tracking progress, and maintaining clear communication across multiple contributors",
+    "ExChal": "Teams working on software projects often struggle with organizing tasks, tracking progress, and maintaining clear communication across multiple contributors.",
     "Approach": "Approach:",
-    "ExApp": " Collaborated with a team of 4 developers using Agile methodology and Jira to plan and execute development over a 10-week sprint cycle. Contributed to building a system for task tracking, team collaboration, and progress monitoring. Focused on improving workflow clarity and usability within the application",
+    "ExApp": " Collaborated with a team of 4 developers using Agile methodology and Jira to plan and execute development over a 10-week sprint cycle. Contributed to building a system for task tracking, team collaboration, and progress monitoring. Focused on improving workflow clarity and usability within the application.",
     "Outcome": "Outcome",
-    "ExOut": "Improved team coordination and project visibility throughout development. Delivered a structured workflow system that supported task management and progress tracking. Gained experience working in a real Agile development environment with cross-functional collaboration"
+    "ExOut": "Improved team coordination and project visibility throughout development. Delivered a structured workflow system that supported task management and progress tracking. Gained experience working in a real Agile development environment with cross-functional collaboration."
   },
    
 ]
@@ -197,6 +206,8 @@ document.getElementById('projectCard').innerHTML = projects.map((item) =>
 
 
   `   <h2 class="projectName">${item.Project}<a target="_blank" rel="noopener noreferrer" href='${item.url}'><img class='openInNewWindow' src='assets/images/open.png'></img></a></h2>
+    <strong> <h3>${item.tc}</h3></strong><h3 class='fontWhite'>${item.cons}</h3><h3 class='fontWhite'>${item.conss}</h3>
+
   <div id="scroll-container">
 
     <img class='projPhoto' src="${item.Image1}"> 
@@ -362,12 +373,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const linkElement = document.createElement('a');
 linkElement.setAttribute('target', '_blank');
 linkElement.setAttribute('href', 'https://github.com/quette111/Job_Log');
-let githubImg = document.createElement('img');
-githubImg.src = 'assets/images/gitIcon.png';
-githubImg.alt = 'Github Icon';
-githubImg.classList.add('githubImg');
 
-linkElement.append(githubImg);
+
+
 document.querySelector('.projectName').append(linkElement);
 
 
