@@ -147,13 +147,13 @@ let projects = [
         "Image8": "assets/images/mongo.png",
         "Image9": "assets/images/webpack.png",
     "Challenge": "The Challenge:",
-    "ExChal": "Managing multiple job applications can quickly become disorganized, making it difficult to track progress, stay consistent, and identify next steps.",
+    "ExChal": "A lack of structured application tracking leads to inconsistent user engagement, missed follow-ups, and limited visibility into the job search journey.",
     "Approach": "Approach:",
-    "ExApp": "Designed a system to track application status, habits, and key actions. Integrated AI-driven suggestions to support decision-making and structured the interface for clarity and ease of use. Implemented email signup functionality with MailerLite to automate user onboarding and segment users into a subscriber group for follow - up messaging.",
+    "ExApp": "I designed a system to track application status, habits, and key actions. I also integrated AI-driven suggestions to support decision-making and structured the interface for clarity and ease of use. Lastly, I implemented email signup functionality with MailerLite to automate user onboarding and segment users into a subscriber group for follow-up messaging.",
     "Outcome": "Outcome",
-    "ExOut": "Created a more structured and user-friendly workflow. Reduced friction in managing multiple applications. Improved visibility into the job search process. Enabled automated user onboarding through email capture and lifecycle messaging.",
+    "ExOut": "I was able to create a more structured and user-friendly workflow. Utilizing MailerLite, I enabled automated user onboarding through email capture and lifecycle messaging. If a user signs up, they will also be sent follow-up email marketing campaigns based on segmentation.",
   }, {
-    "Project": "KickBack — Interactive Ecommerce Sneaker Platform",
+    "Project": "KickBack — Interactive E-commerce Sneaker Platform",
     "url": "",
     "tc": '',
     "cons": ' ',
@@ -170,32 +170,11 @@ let projects = [
     "Challenge": "The Challenge:",
     "ExChal": "Online resale sneaker platforms often lack a smooth and intuitive experience for browsing, purchasing, and managing product listings.",
     "Approach": "Approach:",
-    "ExApp": "Designed and developed an ecommerce platform for lightly used shoes featuring product listings, shopping cart functionality, and checkout flow. Implemented admin capabilities for adding and managing products. Focused on creating a clear and intuitive user journey from browsing to purchase.",
+    "ExApp": "I developed an E-commerce platform for lightly used shoes featuring product listings, shopping cart functionality, and checkout flow. I then added admin capabilities for managing products and marketing materials. The primary focus of this project was to create a clear and intuitive user journey from browsing to purchase.",
     "Outcome": "Outcome",
-    "ExOut": "Built a functional ecommerce experience supporting product browsing, cart management, and checkout processes. Improved understanding of user flow in online purchasing systems. Currently expanding features and refining admin product management tools."
+    "ExOut": "By creating a fully functional E-commerce website, I improved my understanding of user flow in online purchasing systems. "
   },
-  {
-    "Project": "MycelFlow — Event Management & Team Workflow",
-    "url": "https://github.com/Code-the-Dream-School/jj-practicum-team-5-frontmy",
-    "tc": '',
-    "cons": '',
-    "conss": '',
-    "Image1": "assets/images/my1.png",
-    "Image2": "assets/images/my2.png",
-    "Image3": "assets/images/my3.png",
-    "Image4": "assets/images/htmll.png",
-    "Image5": "assets/images/css.png",
-    "Image6": "assets/images/js.png",
-    "Image7": "assets/images/react.png",
-    "Image8": "assets/images/express.png",
-    "Image9": "assets/images/mongo.png",
-    "Challenge": "The Challenge:",
-    "ExChal": "Teams working on software projects often struggle with organizing tasks, tracking progress, and maintaining clear communication across multiple contributors.",
-    "Approach": "Approach:",
-    "ExApp": " Collaborated with a team of 4 developers using Agile methodology and Jira to plan and execute development over a 10-week sprint cycle. Contributed to building a system for task tracking, team collaboration, and progress monitoring. Focused on improving workflow clarity and usability within the application.",
-    "Outcome": "Outcome",
-    "ExOut": "Improved team coordination and project visibility throughout development. Delivered a structured workflow system that supported task management and progress tracking. Gained experience working in a real Agile development environment with cross-functional collaboration."
-  },
+  
    
 ]
 
