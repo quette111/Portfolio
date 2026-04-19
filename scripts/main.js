@@ -51,10 +51,10 @@ window.addEventListener("DOMContentLoaded", function () {
     processChunk(); // Start processing
   });
   
-
+/*
 
 const techArray = [
-    {name: 'Javascript', image: "assets/images/js.png"},
+  { name: 'Campaign coordination & promotional support', image: "assets/images/js.png"},
     {name: 'HTML', image: 'assets/images/htmll.png'},
     {name: 'CSS', image: 'assets/images/css.png'},
     {name: 'Blank', image: 'assets/images/block2.png'}
@@ -68,13 +68,7 @@ const frameArray = [
     {name: 'Chart.js', image: 'assets/images/chart.svg'},
 ];
 
-const toolArray = [
-    {name: 'Visual Studio Code', image: 'assets/images/vscode.png'},
-    {name: 'Git', image: 'assets/images/git.png'},
-    {name: 'GitHub', image: 'assets/images/github.png'}, 
-    {name: 'Webpack', image: 'assets/images/webpack.png'}, 
-    {name: 'Postman', image: 'assets/images/postman.png'}
-];
+
 
 
 
@@ -88,11 +82,11 @@ document.getElementById('languageDiv').innerHTML = techArray.map((entry) =>
 
 
   
-  <img class='imgJ' src='${entry.image}'></img>
+  <h4 class='imgJ'>${techArray[0].name}</h4>
  
   `).join("");
 
-document.getElementById('languageDiv').innerHTML +=` <h2 class="pLan">Programming Languages</h2>`
+document.getElementById('languageDiv').innerHTML +=` <h2 class="pLan">Marketing & Digital Skills</h2>`
 
 
 
@@ -104,31 +98,20 @@ document.getElementById('frameworks').innerHTML = frameArray.map((entry) =>
 
 
   
-  <img class='imgJ' src='${entry.image}'></img>
+  <h4 class='imgJ'>${frameArray[0].name}</h4>
  
   `).join("");
 
-document.getElementById('frameworks').innerHTML +=` <h2 class="pLan">Frameworks & Libraries</h2>`
+document.getElementById('frameworks').innerHTML +=` <h2 class="pLan">Tools & Technical Skills</h2>`
 
 
-document.getElementById('tools').innerHTML = toolArray.map((entry) => 
 
 
-  `
-
-
-  
-  <img class='imgJ' src='${entry.image}'></img>
- 
-  `).join("");
-
-document.getElementById('tools').innerHTML +=`<h2 class="pLan">Dev Tools & Platforms</h2>`
-
-
+*/
 
 
 let i = 0; 
-const selfAdjectives = ['web developer','problem solver','tech enthusiast']
+const selfAdjectives = ['digital operations specialist', 'technical problem solver','tech enthusiast']
 const description = document.getElementById('description');
 
 function changeDescription(){
@@ -149,7 +132,7 @@ changeDescription()
 let projects = [
     
     {
-        "Project": "jobLog",
+    "Project": "jobLog - AI-Powered Application Tracker",
         "url": "https://job-log.onrender.com/",
         "Image1": "assets/images/jlLanding.png",
         "Image2": "assets/images/jobLog11.png",
@@ -160,9 +143,14 @@ let projects = [
         "Image7": "assets/images/express.png",
         "Image8": "assets/images/mongo.png",
         "Image9": "assets/images/webpack.png",
-        "Description":"jobLog is a job tracker with Chart.js visualizations and AI-powered resume tips to boost your job search"
+    "Challenge": "The Challenge:",
+    "ExChal": "Managing multiple job applications can quickly become disorganized, making it difficult to track progress, stay consistent, and identify next steps",
+    "Approach": "Approach:",
+    "ExApp": "Designed a system to track application status, habits, and key actions. Integrated AI- driven suggestions to support decision - making Structured the interface to prioritize clarity and ease of use",
+    "Outcome": "Outcome",
+    "ExOut":"Created a more structured and user - friendly workflow Reduced friction in managing multiple applications Improved overall visibility into the job search process",
   }, {
-    "Project": "KickBack",
+    "Project": "KickBack — Interactive Ecommerce Sneaker Platform",
     "url": "",
     "Image1": "assets/images/kb1.png",
     "Image2": "assets/images/kb3.png",
@@ -173,10 +161,15 @@ let projects = [
     "Image7": "assets/images/react.png",
     "Image8": "assets/images/express.png",
     "Image9": "assets/images/mongo.png",
-    "Description": "Interactive e-commerce platform for lightly used shoes with cart, checkout, and admin privileges for adding products (in progress)"
+    "Challenge": "The Challenge:",
+    "ExChal": "Online resale sneaker platforms often lack a smooth and intuitive experience for browsing, purchasing, and managing product listings",
+    "Approach": "Approach:",
+    "ExApp": "Designed and developed an ecommerce platform for lightly used shoes featuring product listings, shopping cart functionality, and checkout flow. Implemented admin capabilities for adding and managing products. Focused on creating a clear and intuitive user journey from browsing to purchase",
+    "Outcome": "Outcome",
+    "ExOut": "Built a functional ecommerce experience supporting product browsing, cart management, and checkout processes. Improved understanding of user flow in online purchasing systems. Currently expanding features and refining admin product management tools"
   },
   {
-    "Project": "MycelFlow",
+    "Project": "MycelFlow — Event Management & Team Workflow",
     "url": "https://github.com/Code-the-Dream-School/jj-practicum-team-5-frontmy",
     "Image1": "assets/images/my1.png",
     "Image2": "assets/images/my2.png",
@@ -187,35 +180,14 @@ let projects = [
     "Image7": "assets/images/react.png",
     "Image8": "assets/images/express.png",
     "Image9": "assets/images/mongo.png",
-    "Description": "Event management system with task tracking, team collaboration, and progress monitoring. I was apart of a team of 4 developers to create this application. We utilized Agile methodology, sprints, and jira to complete this project over a 10 week period."
+    "Challenge": "The Challenge:",
+    "ExChal": "Teams working on software projects often struggle with organizing tasks, tracking progress, and maintaining clear communication across multiple contributors",
+    "Approach": "Approach:",
+    "ExApp": " Collaborated with a team of 4 developers using Agile methodology and Jira to plan and execute development over a 10-week sprint cycle. Contributed to building a system for task tracking, team collaboration, and progress monitoring. Focused on improving workflow clarity and usability within the application",
+    "Outcome": "Outcome",
+    "ExOut": "Improved team coordination and project visibility throughout development. Delivered a structured workflow system that supported task management and progress tracking. Gained experience working in a real Agile development environment with cross-functional collaboration"
   },
-    {
-        "Project": "Astro Dodge",
-        "url": "",
-        "Image1": "assets/images/astro1.png",
-        "Image2": "assets/images/astro2.png",
-        "Image3": "assets/images/astro3.png",
-        "Image4": "assets/images/htmll.png",
-        "Image5": "assets/images/css.png",
-        "Image6": "assets/images/js.png",
-        "Image7": "assets/images/block.png",
-        "Image8": "assets/images/block.png",
-        "Image9": "assets/images/block.png",
-        "Description":"Interactive point based game vs CPU"
-    },{
-        "Project": "Christiansen & Associates LLC",
-        "url": "https://christiansenandassociates.com/",
-        "Image1": "assets/images/CANDL.png",
-        "Image2": "assets/images/CL2.png",
-        "Image3": "assets/images/CL3.png",
-        "Image4": "assets/images/wp.png",
-        "Image5": "assets/images/block.png",
-        "Image6": "assets/images/block.png",
-        "Image7": "assets/images/block.png",
-        "Image8": "assets/images/block.png",
-        "Image9": "assets/images/block.png",
-        "Description":" Customized a WordPress site using block editor and theme settings. Added content sections, forms, and responsive styling"
-    }  
+   
 ]
 
 
@@ -223,24 +195,33 @@ let projects = [
 
 document.getElementById('projectCard').innerHTML = projects.map((item) => 
 
-  ` <h2 class="projectName">${item.Project}<a target="_blank" rel="noopener noreferrer" href='${item.url}'><img class='openInNewWindow' src='assets/images/open.png'></img></a></h2>
- <h2 class='projectDescription'>${item.Description}</h2>
-<div id="scroll-container">
+
+  `   <h2 class="projectName">${item.Project}<a target="_blank" rel="noopener noreferrer" href='${item.url}'><img class='openInNewWindow' src='assets/images/open.png'></img></a></h2>
+  <div id="scroll-container">
 
     <img class='projPhoto' src="${item.Image1}"> 
     <img class='projPhoto' src="${item.Image2}">
     <img class='projPhoto' src="${item.Image3}">
 </div>
-    <div id='techContain'>
-    <h3>Technology used:</h3>
-        <img id='techPhoto' src="${item.Image4}">
-        <img id='techPhoto' src="${item.Image5}">
-        <img id='techPhoto' src="${item.Image6}"><br>
-        <img id='techPhoto' src="${item.Image7}">
-        <img id='techPhoto' src="${item.Image8}">
-        <img id='techPhoto' src="${item.Image9}">
-        
-    </div>
+
+<div class="project-grid">
+  <div class="project-card">
+    <h2 class="subheaderproj">${item.Challenge}</h2>
+    <h2 class="projectDescription">${item.ExChal}</h2>
+  </div>
+
+  <div class="project-card">
+    <h2 class="subheaderproj">${item.Approach}</h2>
+    <h2 class="projectDescription">${item.ExApp}</h2>
+  </div>
+
+  <div class="project-card outcome">
+    <h2 class="subheaderproj">${item.Outcome}</h2>
+    <h2 class="projectDescription">${item.ExOut}</h2>
+  </div>
+</div>
+
+ 
    
 
     
