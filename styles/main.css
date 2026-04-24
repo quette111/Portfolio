@@ -386,6 +386,13 @@ figcaption {
   left: 38%;
 }
 
+#ga {
+   background: rgba(255, 255, 255, 0.05); /* subtle contrast */
+  border-radius: 50%; /* keeps circle clean */
+ 
+
+}
+
 #wrapper {
   display: none;
 }
